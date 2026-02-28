@@ -59,6 +59,7 @@ async function checkWithRetry(
       return { available, registrar };
     } catch (err) {
       lastError = err instanceof Error ? err : new Error(String(err));
+      console.error(`[domcheck] ${domain} attempt ${attempt}:`, lastError.message, lastError.stack);
       if (signal?.aborted) throw lastError;
 
       // Last attempt — don't sleep, just let the loop end

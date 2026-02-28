@@ -26,6 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <meta name="impact-site-verification" content="295f3557-8cb1-4100-b779-3f8521ea2934" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-zinc-950 font-sans text-zinc-100 antialiased`}
       >

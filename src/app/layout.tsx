@@ -14,9 +14,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://domhaul.vercel.app"),
   title: "domhaul — Find Available Domain Names",
   description:
     "AI-powered domain name generator and availability checker. Find the perfect domain for your project.",
+  openGraph: {
+    title: "domhaul — Find Available Domain Names",
+    description:
+      "AI-powered domain name generator and availability checker. Find the perfect domain for your project.",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "domhaul" }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "domhaul — Find Available Domain Names",
+    description:
+      "AI-powered domain name generator and availability checker. Find the perfect domain for your project.",
+    images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({

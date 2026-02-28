@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle glow behind logo -->
+  <circle cx="200" cy="315" r="280" fill="url(#glow)"/>
+
+  <!-- Grid dots pattern -->
+  <g fill="#27272a" opacity="0.5">
+    <circle cx="50" cy="50" r="1.5"/>
+    <circle cx="110" cy="50" r="1.5"/>
+    <circle cx="170" cy="50" r="1.5"/>
+    <circle cx="230" cy="50" r="1.5"/>
+    <circle cx="290" cy="50" r="1.5"/>
+    <circle cx="350" cy="50" r="1.5"/>
+    <circle cx="50" cy="110" r="1.5"/>
+    <circle cx="110" cy="110" r="1.5"/>
+    <circle cx="170" cy="110" r="1.5"/>
+    <circle cx="230" cy="110" r="1.5"/>
+    <circle cx="290" cy="110" r="1.5"/>
+    <circle cx="350" cy="110" r="1.5"/>
+    <circle cx="50" cy="170" r="1.5"/>
+    <circle cx="110" cy="170" r="1.5"/>
+    <circle cx="170" cy="170" r="1.5"/>
+    <circle cx="230" cy="170" r="1.5"/>
+    <circle cx="290" cy="170" r="1.5"/>
+    <circle cx="350" cy="170" r="1.5"/>
+  </g>
+
+  <!-- Logo D -->
+  <g transform="translate(100, 215)">
+    <path d="M0 0v200h80c69 0 125-45 125-100S149 0 80 0H0z" fill="none" stroke="#818cf8" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="80" cy="100" r="16" fill="#34d399"/>
+  </g>
+
+  <!-- Title -->
+  <text x="420" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="88" font-weight="700" fill="#fafafa" letter-spacing="-2">domhaul</text>
+
+  <!-- Tagline -->
+  <text x="420" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="32" fill="#a1a1aa">AI-powered domain name finder</text>
+
+  <!-- Mock domain results -->
+  <g transform="translate(420, 390)">
+    <!-- Available domain -->
+    <rect width="280" height="52" rx="10" fill="#064e3b" opacity="0.3" stroke="#34d399" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="20" y="33" font-family="ui-monospace, monospace" font-size="20" fill="#6ee7b7">sparklaunch.com</text>
+    <circle cx="255" cy="26" r="6" fill="#34d399"/>
+
+    <!-- Available domain 2 -->
+    <g transform="translate(300, 0)">
+      <rect width="240" height="52" rx="10" fill="#064e3b" opacity="0.3" stroke="#34d399" stroke-opacity="0.3" stroke-width="1"/>
+      <text x="20" y="33" font-family="ui-monospace, monospace" font-size="20" fill="#6ee7b7">devhaul.io</text>
+      <circle cx="215" cy="26" r="6" fill="#34d399"/>
+    </g>
+
+    <!-- Taken domain -->
+    <g transform="translate(0, 68)">
+      <rect width="240" height="52" rx="10" fill="#27272a" opacity="0.4" stroke="#3f3f46" stroke-width="1"/>
+      <text x="20" y="33" font-family="ui-monospace, monospace" font-size="20" fill="#71717a">coolname.dev</text>
+      <circle cx="215" cy="26" r="6" fill="#52525b"/>
+    </g>
+
+    <!-- Available domain 3 -->
+    <g transform="translate(260, 68)">
+      <rect width="280" height="52" rx="10" fill="#064e3b" opacity="0.3" stroke="#34d399" stroke-opacity="0.3" stroke-width="1"/>
+      <text x="20" y="33" font-family="ui-monospace, monospace" font-size="20" fill="#6ee7b7">buildpulse.app</text>
+      <circle cx="255" cy="26" r="6" fill="#34d399"/>
+    </g>
+  </g>
+
+  <!-- Bottom border accent -->
+  <rect x="0" y="624" width="1200" height="6" fill="#818cf8" opacity="0.6"/>
+</svg>

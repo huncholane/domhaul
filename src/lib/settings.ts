@@ -15,7 +15,7 @@ export interface Settings {
 export const DEFAULT_SETTINGS: Settings = {
   defaultProvider: "server",
   anthropicApiKey: "",
-  anthropicModel: "claude-sonnet-4-6",
+  anthropicModel: "claude-haiku-4-5-20251001",
   openaiApiKey: "",
   openaiModel: "gpt-4o-mini",
   ollamaBaseUrl: "http://localhost:11434",

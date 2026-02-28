@@ -36,6 +36,7 @@ async function checkWithRetry(
     try {
       const available = await isAvailable(domain, {
         timeoutMs: RDAP_TIMEOUT_MS,
+        rdapOnly: true,
         signal,
       });
 
@@ -44,6 +45,7 @@ async function checkWithRetry(
         try {
           const result = await lookup(domain, {
             timeoutMs: RDAP_TIMEOUT_MS,
+            rdapOnly: true,
             signal,
           });
           if (result.ok && result.record) {

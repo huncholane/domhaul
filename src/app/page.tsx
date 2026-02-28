@@ -183,9 +183,13 @@ export default function Home() {
   return (
     <div className="mx-auto min-h-screen max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
       <header className="mb-10">
-        <h1 className="text-2xl font-bold tracking-tight text-zinc-100">
-          domhaul
-        </h1>
+        <div className="flex items-center gap-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.svg" alt="" width={36} height={36} className="rounded-lg" />
+          <h1 className="text-2xl font-bold tracking-tight text-zinc-100">
+            domhaul
+          </h1>
+        </div>
         <p className="mt-1 text-sm text-zinc-500">
           Find available domain names with AI or check your own
         </p>

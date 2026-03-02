@@ -607,6 +607,417 @@ const posts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "com-vs-io-vs-app-vs-dev-which-tld-should-you-choose",
+    title: ".com vs .io vs .app vs .dev: Which Domain Extension Should You Choose?",
+    description:
+      "An in-depth comparison of the most popular domain extensions for tech companies and startups. Learn the pros, cons, pricing, trust factors, and SEO implications of .com, .io, .app, .dev, .co, and .ai.",
+    date: "2026-02-10",
+    keywords: [
+      ".com vs .io",
+      "best domain extension",
+      "TLD comparison",
+      ".app domain",
+      ".dev domain",
+      ".io domain",
+      "domain extension for startup",
+      "which TLD to choose",
+      ".com vs .app vs .dev",
+      "best TLD for tech startup",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "Choosing a domain extension (TLD) used to be simple — you picked <strong>.com</strong> and moved on. But the domain landscape has evolved dramatically. Today, startups and tech companies regularly use <strong>.io</strong>, <strong>.app</strong>, <strong>.dev</strong>, <strong>.co</strong>, and <strong>.ai</strong> to build successful brands. So which one should you choose?",
+      },
+      {
+        type: "paragraph",
+        text: "The answer depends on your audience, industry, budget, and brand strategy. This guide breaks down every major TLD with real data, authoritative sources, and practical recommendations so you can make an informed decision.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What Is a TLD and Why Does It Matter?",
+      },
+      {
+        type: "paragraph",
+        text: "A TLD (top-level domain) is the last part of a domain name — the <strong>.com</strong> in \"google.com\" or the <strong>.io</strong> in \"itch.io\". According to the <strong>Internet Assigned Numbers Authority (IANA)</strong>, there are over 1,500 TLDs available today, up from just a handful in the early days of the internet.",
+      },
+      {
+        type: "paragraph",
+        text: "Your TLD affects how users perceive your brand, how search engines index your site, and even your website's security defaults. A <strong><a href=\"https://www.verisign.com/en_US/domain-names/dnib/index.xhtml\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Verisign Domain Name Industry Brief</a></strong> reports that .com still holds about <strong>53% of all domain registrations worldwide</strong>, but alternative TLDs have been gaining market share steadily since 2014.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: ".com — The Universal Standard",
+      },
+      {
+        type: "paragraph",
+        text: "<strong>.com</strong> has been the dominant TLD since the early internet. Originally short for \"commercial,\" it's now the default extension people type when they don't remember a specific TLD. According to <strong><a href=\"https://domainnamestat.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Domain Name Stat</a></strong>, there are over <strong>160 million .com registrations</strong> as of 2026.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Pros of .com",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Maximum trust.</strong> Users instinctively trust .com domains. A <strong><a href=\"https://www.growthbadger.com/blog/top-level-domains\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">GrowthBadger study</a></strong> found that .com domains are perceived as the most trustworthy TLD by a significant margin.",
+          "<strong>Universal recognition.</strong> Everyone knows what .com is. Your grandmother, your investor, your non-tech customers — nobody will be confused by a .com.",
+          "<strong>Type-in traffic.</strong> People habitually type \".com\" when guessing a URL. If your brand is \"acme\" and someone tries \"acme.com\", you want that to land on your site.",
+          "<strong>Resale value.</strong> .com domains hold and appreciate in value better than any other TLD. According to <strong><a href=\"https://www.namebio.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">NameBio</a></strong>, the vast majority of high-value domain sales are .com.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Cons of .com",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Scarcity.</strong> With 160M+ registrations, short and memorable .com names are extremely hard to find. Most two-word combinations are already registered.",
+          "<strong>Premium pricing.</strong> Desirable .com aftermarket domains typically cost $500-$50,000+, while the same name on .app or .dev might be available at standard registration price.",
+          "<strong>No built-in signals.</strong> .com doesn't tell visitors anything about what you do or what industry you're in.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "<strong>Best for:</strong> Any business targeting a broad, non-technical audience. E-commerce, professional services, consumer brands, enterprise companies. If you can get a good .com, it's almost always the right choice.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: ".io — The Tech Startup Favorite",
+      },
+      {
+        type: "paragraph",
+        text: "<strong>.io</strong> is technically the country-code TLD for the British Indian Ocean Territory, but it has been widely adopted by the tech industry since the early 2010s. The appeal is partly due to \"I/O\" being a common computing term (input/output), and partly because short, brandable .io domains are more available than .com equivalents.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Notable Companies Using .io",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong><a href=\"https://itch.io\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">itch.io</a></strong> — indie game marketplace",
+          "<strong><a href=\"https://socket.io\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">socket.io</a></strong> — real-time communication library",
+          "<strong><a href=\"https://codecov.io\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">codecov.io</a></strong> — code coverage tool (acquired by Sentry)",
+          "<strong><a href=\"https://hackmd.io\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">hackmd.io</a></strong> — collaborative markdown editor",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Pros of .io",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Tech credibility.</strong> In developer and startup circles, .io is immediately recognized and respected.",
+          "<strong>Better availability.</strong> Names that are taken on .com are frequently available on .io.",
+          "<strong>Short and clean.</strong> At just two characters, .io keeps your full domain short.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Cons of .io",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Higher price.</strong> .io domains typically cost $30-50/year, compared to $10-15 for .com.",
+          "<strong>Geopolitical concerns.</strong> .io is the ccTLD of the British Indian Ocean Territory (Chagos Islands), and there's ongoing debate about its long-term status as the territory's sovereignty is disputed. While disruption is unlikely, some companies prefer to avoid this uncertainty.",
+          "<strong>Not universally recognized.</strong> Non-tech audiences may not understand .io or may find it confusing.",
+          "<strong>No HTTPS requirement.</strong> Unlike .app and .dev, .io doesn't enforce HTTPS by default.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "<strong>Best for:</strong> Developer tools, SaaS products, open-source projects, and companies targeting a technical audience. Less suitable for consumer brands or non-tech businesses.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: ".app — Built for Software Products",
+      },
+      {
+        type: "paragraph",
+        text: "<strong>.app</strong> is a generic TLD owned and operated by <strong>Google Registry</strong>. Launched in 2018, it was designed specifically for applications and software products. Its most notable technical feature: <strong>.app is on the HSTS preload list</strong>, which means all .app domains <em>require</em> HTTPS — browsers will refuse to load a .app site over plain HTTP.",
+      },
+      {
+        type: "paragraph",
+        text: "This HTTPS requirement is documented in the <strong><a href=\"https://hstspreload.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">HSTS Preload List</a></strong>, a list maintained by the Chromium project and used by all major browsers.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Notable Companies Using .app",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong><a href=\"https://railway.app\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">railway.app</a></strong> — infrastructure deployment platform",
+          "<strong><a href=\"https://pocketcasts.app\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">pocketcasts.app</a></strong> — podcast player",
+          "<strong><a href=\"https://cash.app\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">cash.app</a></strong> — mobile payment service by Block",
+          "<strong><a href=\"https://write.as\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">ray.so</a></strong> — code screenshot tool by Raycast",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Pros of .app",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Enforced HTTPS.</strong> Built-in security — no chance of accidentally serving your app over unencrypted HTTP.",
+          "<strong>Clear signal.</strong> \".app\" immediately tells visitors this is a software product or application.",
+          "<strong>Good availability.</strong> Far less saturated than .com, with many brandable names still available.",
+          "<strong>Google-backed.</strong> Operated by Google Registry, which provides stable infrastructure.",
+          "<strong>Growing adoption.</strong> More and more legitimate businesses use .app, increasing public familiarity.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Cons of .app",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Moderate pricing.</strong> Typically $15-20/year, slightly more than standard .com registration.",
+          "<strong>HTTPS required.</strong> This is usually a pro, but it means you <em>must</em> set up SSL certificates (most modern hosts handle this automatically).",
+          "<strong>Less type-in traffic.</strong> Users rarely guess \".app\" when trying to find a website.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "<strong>Best for:</strong> Mobile apps, web apps, SaaS products, any software-centric business. Especially strong when your product name includes \"app\" in its concept.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: ".dev — Made for Developers",
+      },
+      {
+        type: "paragraph",
+        text: "<strong>.dev</strong> is another Google Registry TLD, launched in 2019. Like .app, it's on the <strong>HSTS preload list</strong> and requires HTTPS. It's primarily used by developer tools, programming portfolios, documentation sites, and technical communities.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Notable Companies Using .dev",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong><a href=\"https://web.dev\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">web.dev</a></strong> — Google's web development resource",
+          "<strong><a href=\"https://opensource.dev\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">opensource.dev</a></strong> — open-source community",
+          "<strong><a href=\"https://deno.dev\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">deno.dev</a></strong> — JavaScript/TypeScript runtime",
+          "<strong><a href=\"https://glitch.dev\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">astro.build</a></strong> (also on .dev) — web framework",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Pros of .dev",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Strong developer signal.</strong> Immediately communicates that this is a developer-focused product or resource.",
+          "<strong>Enforced HTTPS.</strong> Same security guarantee as .app.",
+          "<strong>Excellent availability.</strong> Even shorter names are often still available on .dev.",
+          "<strong>Growing ecosystem.</strong> Google uses it for their own developer resources (web.dev), lending it credibility.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Cons of .dev",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Very niche.</strong> Outside the developer community, \".dev\" doesn't carry much meaning.",
+          "<strong>Limited consumer appeal.</strong> Non-technical users may be confused by a .dev address.",
+          "<strong>Moderate pricing.</strong> Similar to .app, typically $12-20/year.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "<strong>Best for:</strong> Developer tools, API documentation, programming portfolios, open-source projects, and technical blogs. Not ideal for consumer-facing products.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: ".co — The Startup Alternative",
+      },
+      {
+        type: "paragraph",
+        text: "<strong>.co</strong> is the country-code TLD for Colombia, but it has been heavily marketed as a \"company\" or \"commercial\" alternative to .com. It gained traction in the startup community around 2010 and has been used by several well-known companies.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong><a href=\"https://angel.co\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">angel.co</a></strong> — startup fundraising platform (now AngelList)",
+          "<strong><a href=\"https://x.co\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">x.co</a></strong> — URL shortener by GoDaddy",
+          "<strong>loom.co</strong> — video messaging (later acquired loom.com)",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "<strong>Best for:</strong> Startups that want a short, clean domain when .com is taken. Be aware that .co can be confused with .com (users may accidentally add the \"m\"), so ideally secure both.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: ".ai — The AI Boom Extension",
+      },
+      {
+        type: "paragraph",
+        text: "<strong>.ai</strong> is the country-code TLD for Anguilla, but the explosive growth of artificial intelligence has turned it into a premium tech TLD. According to <strong><a href=\"https://domainnamewire.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Domain Name Wire</a></strong>, .ai registrations have surged over <strong>300%</strong> since 2022, driven by the AI industry boom.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong><a href=\"https://perplexity.ai\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">perplexity.ai</a></strong> — AI search engine",
+          "<strong><a href=\"https://stability.ai\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">stability.ai</a></strong> — AI image generation (Stable Diffusion)",
+          "<strong><a href=\"https://character.ai\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">character.ai</a></strong> — conversational AI platform",
+          "<strong><a href=\"https://huggingface.co\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">jasper.ai</a></strong> — AI content writing",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "<strong>Pricing note:</strong> .ai domains are among the most expensive standard TLDs, typically <strong>$50-100/year</strong> for registration. Premium .ai names on the aftermarket can cost thousands.",
+      },
+      {
+        type: "paragraph",
+        text: "<strong>Best for:</strong> AI and machine learning companies, products with AI as a core feature, research labs. The high price is justified if AI is central to your brand identity.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "TLD Comparison at a Glance",
+      },
+      {
+        type: "paragraph",
+        text: "Here's a quick comparison of the key factors across all six TLDs:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>.com</strong> — Trust: Highest | Price: $10-15/yr | Availability: Very Low | HTTPS: No | Audience: Everyone",
+          "<strong>.io</strong> — Trust: High (tech) | Price: $30-50/yr | Availability: Moderate | HTTPS: No | Audience: Developers, startups",
+          "<strong>.app</strong> — Trust: Growing | Price: $15-20/yr | Availability: High | HTTPS: Required | Audience: Software, apps",
+          "<strong>.dev</strong> — Trust: Growing | Price: $12-20/yr | Availability: High | HTTPS: Required | Audience: Developers",
+          "<strong>.co</strong> — Trust: Moderate | Price: $25-35/yr | Availability: Moderate | HTTPS: No | Audience: Startups",
+          "<strong>.ai</strong> — Trust: High (AI space) | Price: $50-100/yr | Availability: Moderate | HTTPS: No | Audience: AI companies",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How TLDs Affect SEO: What Google Says",
+      },
+      {
+        type: "paragraph",
+        text: "One of the biggest concerns when choosing a non-.com TLD is SEO. The good news: <strong>Google has stated clearly that generic TLDs do not receive preferential treatment in search rankings</strong>. Google's <strong><a href=\"https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">official documentation on international targeting</a></strong> confirms that new gTLDs like .app and .dev are treated the same as .com.",
+      },
+      {
+        type: "paragraph",
+        text: "John Mueller, Google's Search Advocate, has <strong><a href=\"https://www.searchenginejournal.com/google-says-domain-extensions-dont-impact-seo/474230/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">confirmed multiple times</a></strong> that domain extensions don't directly impact SEO rankings. However, the <em>indirect</em> effects are real: user trust, click-through rates, and brandability all influence how your domain performs in search over time.",
+      },
+      {
+        type: "callout",
+        text: "The SEO bottom line: Google treats all gTLDs equally. Your TLD won't hurt your rankings — but a trustworthy, memorable domain will improve user signals that <em>do</em> affect rankings.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How to Compare TLD Availability for Your Brand Name",
+      },
+      {
+        type: "paragraph",
+        text: "The smartest approach is to check your preferred brand name across multiple TLDs simultaneously. This way, you can see which extensions are available and make a decision based on real data rather than guessing.",
+      },
+      {
+        type: "image",
+        src: "/blog/domhaul-check-domains.png",
+        alt: "domhaul's Check Domains feature comparing availability of brightpath and cloudpeak across .com, .app, and .dev TLDs",
+        caption:
+          "Using domhaul's Check Domains feature to compare the same brand name across .com, .app, and .dev simultaneously.",
+      },
+      {
+        type: "callout",
+        text: "<strong><a href=\"/\" class=\"underline\">domhaul</a></strong> lets you check multiple domains across different TLDs in a single search. Paste in your candidates — like \"myname.com, myname.app, myname.dev\" — and see availability results instantly. <a href=\"/\" class=\"underline\">Try it now</a>.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "The Verdict: Which TLD Should You Choose?",
+      },
+      {
+        type: "paragraph",
+        text: "There's no single right answer, but here are clear recommendations based on common scenarios:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Building for a broad audience?</strong> Go with .com. It's the safest, most universally trusted option.",
+          "<strong>Building a developer tool or SaaS?</strong> .com is ideal, but .io, .app, or .dev are all strong alternatives your audience will trust.",
+          "<strong>Building an AI product?</strong> .ai makes a strong statement, but the .com is still valuable if available. Consider securing both.",
+          "<strong>Budget-conscious startup?</strong> .app and .dev offer the best value — good availability, reasonable pricing, and built-in HTTPS.",
+          "<strong>Want the shortest possible domain?</strong> .io and .co at two characters keep your total URL length minimal.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Whatever TLD you choose, the most important thing is that your <em>domain name</em> itself is strong — short, memorable, brandable, and easy to spell. A great name on .app will outperform a mediocre name on .com every time.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Does Google rank .com domains higher than other TLDs?",
+            answer:
+              "No. Google has officially stated that all generic TLDs (including .app, .dev, .io, and .co) are treated equally in search rankings. John Mueller, Google's Search Advocate, has confirmed this multiple times. However, .com domains may benefit indirectly from higher user trust and click-through rates.",
+          },
+          {
+            question: "Is .io a safe long-term choice for my domain?",
+            answer:
+              ".io is widely used and trusted in the tech community. The main concern is that it's technically a country-code TLD (British Indian Ocean Territory), and sovereignty changes could theoretically affect it. However, the tech community's massive investment in .io domains makes a disruptive change very unlikely. Many successful companies including itch.io and codecov.io have built their brands on .io.",
+          },
+          {
+            question: "Why do .app and .dev require HTTPS?",
+            answer:
+              "Both .app and .dev are included in the HSTS (HTTP Strict Transport Security) preload list, which is built into all major browsers. This means browsers will only connect to these domains over encrypted HTTPS connections. Google, which operates both TLDs, made this decision to promote web security. In practice, this isn't a burden since all modern hosting providers offer free SSL certificates.",
+          },
+          {
+            question: "Should I buy the .com even if I use a different TLD?",
+            answer:
+              "Yes, if it's available at a reasonable price. Many users will instinctively type .com when trying to visit your site. Owning the .com prevents confusion and protects against competitors or squatters. You can redirect it to your primary domain. This is a common strategy — many .io and .app companies also own the .com equivalent.",
+          },
+          {
+            question: "Which TLD has the best domain name availability?",
+            answer:
+              ".dev and .app currently offer the best availability for short, brandable names, since they're newer TLDs (launched 2018-2019) with fewer registrations. .io has moderate availability, .co is more saturated, and .com has the least availability for desirable names. Using a tool like domhaul to check multiple TLDs simultaneously is the fastest way to compare.",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export function getAllPosts(): BlogPost[] {

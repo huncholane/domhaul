@@ -43,6 +43,25 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <head>
         <meta name="impact-site-verification" content="295f3557-8cb1-4100-b779-3f8521ea2934" />
+        <link rel="alternate" type="application/rss+xml" title="domhaul Blog" href="/feed.xml" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "domhaul",
+              url: "https://domhaul.vercel.app",
+              description:
+                "AI-powered domain name generator and availability checker.",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://domhaul.vercel.app/?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-zinc-950 font-sans text-zinc-100 antialiased`}

@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Blog — domhaul",
   description:
     "Tips, guides, and insights on domain names, branding, and building your online presence.",
+  alternates: {
+    canonical: "/blog",
+    types: {
+      "application/rss+xml": "/feed.xml",
+    },
+  },
 };
 
 export default function BlogPage() {

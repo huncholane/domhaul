@@ -3,6 +3,12 @@
 import type { DomainResult } from "@/lib/types";
 import { StatusBadge } from "./status-badge";
 
+const NAMECHEAP_AFF_BASE = "https://namecheap.pxf.io/k4jn2z";
+
+function getRegisterUrl(domain: string): string {
+  return `${NAMECHEAP_AFF_BASE}?u=${encodeURIComponent(`https://www.namecheap.com/domains/registration/results/?domain=${domain}`)}`;
+}
+
 export function DomainCard({ result }: { result: DomainResult }) {
   const status = result.error
     ? "error"
@@ -35,7 +41,17 @@ export function DomainCard({ result }: { result: DomainResult }) {
           </p>
         )}
       </div>
-      <div className="ml-3 shrink-0">
+      <div className="ml-3 flex shrink-0 items-center gap-2">
+        {status === "available" && (
+          <a
+            href={getRegisterUrl(result.domain)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-md bg-emerald-600 px-2.5 py-1 text-xs font-medium text-white transition-colors hover:bg-emerald-500"
+          >
+            Register
+          </a>
+        )}
         <StatusBadge status={status} />
       </div>
     </div>

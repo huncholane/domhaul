@@ -1517,6 +1517,814 @@ const posts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "ai-domain-name-generators",
+    title: "AI Domain Name Generators: How They Work and Which Ones to Use in 2026",
+    description:
+      "AI domain name generators use machine learning to brainstorm creative, available domain names from a simple description. Learn how they work, compare the best tools, and find the right one for your needs.",
+    date: "2026-01-15",
+    keywords: [
+      "AI domain name generator",
+      "domain name generator",
+      "best domain name generator",
+      "AI domain finder",
+      "domain name ideas generator",
+      "automatic domain name generator",
+      "smart domain name generator",
+      "domain brainstorming tool",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "Coming up with a great domain name used to mean hours of manual brainstorming, checking registrars one name at a time, and settling for whatever was left. AI domain name generators have changed that entirely. These tools use large language models and machine learning to generate creative, brandable domain names from a simple text description — and many check availability automatically.",
+      },
+      {
+        type: "paragraph",
+        text: "But not all AI generators are created equal. Some produce generic, uninspired names. Others generate creative options but don't check if they're actually available. In this guide, we'll explain how AI domain generators work, compare the best options, and help you pick the right tool.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How AI Domain Name Generators Work",
+      },
+      {
+        type: "paragraph",
+        text: "Modern AI domain generators are built on <strong>large language models (LLMs)</strong> — the same technology behind tools like ChatGPT and Claude. When you describe your project, the AI analyzes your description to understand the concept, tone, and industry, then generates names using several techniques:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Semantic understanding.</strong> The AI understands that a \"meditation app\" relates to concepts like calm, mindfulness, breathing, and zen — not just the literal words you typed.",
+          "<strong>Word combination.</strong> It blends relevant words, prefixes, and suffixes in creative ways: compound words (MindFlow), portmanteaus (Zenify), and modified spellings (Kalm).",
+          "<strong>Phonetic analysis.</strong> Good generators consider how names sound, favoring combinations that are easy to pronounce and remember.",
+          "<strong>Brand pattern matching.</strong> AI can learn from successful brand names and apply similar naming patterns to your industry.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The best generators then add a <strong>real-time availability check</strong> using WHOIS/RDAP lookups, so you only see names you can actually register. This eliminates the most frustrating part of domain hunting: falling in love with a name only to find it's taken.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "The Best AI Domain Name Generators Compared",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "domhaul — AI Generation + Real-Time Availability",
+      },
+      {
+        type: "paragraph",
+        text: "<strong><a href=\"/\" class=\"underline\">domhaul</a></strong> combines AI-powered name generation with instant availability checking across multiple TLDs. You describe your project in plain language, choose which TLDs to check (.com, .io, .app, .dev, etc.), and get a list of creative names with real-time availability status.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Approach:</strong> AI generates names from your project description, then checks availability via RDAP/WHOIS in real time",
+          "<strong>TLD support:</strong> .com, .io, .dev, .app, .co, .net, .org, .ai, .xyz",
+          "<strong>Unique features:</strong> Multi-round generation (keeps generating until N available names are found), bulk domain checking mode, search history",
+          "<strong>Price:</strong> Free",
+        ],
+      },
+      {
+        type: "image",
+        src: "/blog/domhaul-ai-generator.png",
+        alt: "domhaul AI domain name generator showing creative name suggestions for a sustainable fashion marketplace",
+        caption:
+          "domhaul generating domain name ideas from a natural language project description, with real-time availability checking.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Lean Domain Search — Word Combination Engine",
+      },
+      {
+        type: "paragraph",
+        text: "<strong><a href=\"https://leandomainsearch.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Lean Domain Search</a></strong> (created by <strong><a href=\"https://automattic.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Automattic</a></strong>, the company behind WordPress.com) pairs your keyword with other words to generate available .com domains. It's fast and simple, but doesn't use AI — it relies on a dictionary of word combinations.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Approach:</strong> Keyword-based word pairing (not AI)",
+          "<strong>TLD support:</strong> .com only",
+          "<strong>Strengths:</strong> Very fast, only shows available names",
+          "<strong>Limitations:</strong> Generic combinations, .com only, no natural language input",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Namelix — AI Brand Name Generator",
+      },
+      {
+        type: "paragraph",
+        text: "<strong><a href=\"https://namelix.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Namelix</a></strong> uses AI to generate short, brandable business names with optional logo mockups. It's more focused on brand name generation than domain-specific searches, but it's a useful brainstorming tool.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Approach:</strong> AI-generated brand names with style preferences",
+          "<strong>Strengths:</strong> Creative names, logo mockups, name style filters",
+          "<strong>Limitations:</strong> Doesn't check domain availability directly, requires you to verify separately",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Namecheap Beast Mode — Bulk Combination Generator",
+      },
+      {
+        type: "paragraph",
+        text: "<strong><a href=\"https://www.namecheap.com/domains/domain-name-search/beast-mode/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Namecheap's Beast Mode</a></strong> lets you enter multiple keywords and generates all possible combinations, checking availability across multiple TLDs. It's not AI-powered but useful for systematic exploration.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Approach:</strong> Combinatorial keyword matching",
+          "<strong>Strengths:</strong> Bulk checking, multiple TLDs, integrated with Namecheap registration",
+          "<strong>Limitations:</strong> Not AI-driven, results are mechanical combinations",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "ChatGPT / Claude — General-Purpose AI",
+      },
+      {
+        type: "paragraph",
+        text: "You can use general-purpose AI assistants like <strong><a href=\"https://chat.openai.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">ChatGPT</a></strong> or <strong><a href=\"https://claude.ai/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Claude</a></strong> to brainstorm domain names. They're excellent at creative ideation but have a critical limitation: <strong>they can't check if domains are actually available</strong>. You'll need to verify availability separately.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Approach:</strong> General-purpose language model conversation",
+          "<strong>Strengths:</strong> Highly creative, understands nuance, can iterate on ideas",
+          "<strong>Limitations:</strong> No availability checking, may suggest taken names, requires manual verification",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What to Look for in a Domain Name Generator",
+      },
+      {
+        type: "paragraph",
+        text: "Not all generators are worth your time. Here's what separates good tools from bad ones:",
+      },
+      {
+        type: "list",
+        ordered: true,
+        items: [
+          "<strong>Real-time availability checking.</strong> Generating names is only half the job. If the tool doesn't check availability, you'll waste time on names you can't register.",
+          "<strong>Natural language input.</strong> You should be able to describe your project in a sentence, not just enter a single keyword.",
+          "<strong>Multi-TLD support.</strong> Good generators check across .com, .io, .app, .dev, and other relevant TLDs simultaneously.",
+          "<strong>Creative, brandable output.</strong> The names should feel like real brands, not random word salads.",
+          "<strong>Speed.</strong> Results should appear in seconds, not minutes. Slow tools kill your creative flow.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Tips for Getting Better Results from AI Generators",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Be descriptive, not prescriptive.</strong> Instead of \"fitness app,\" try \"a fitness app that creates personalized workout plans using AI.\" More context = better suggestions.",
+          "<strong>Mention your brand personality.</strong> Include words like \"playful,\" \"premium,\" \"minimal,\" or \"technical\" to guide the AI's tone.",
+          "<strong>Try multiple TLDs.</strong> A name that's taken on .com might be available on .app or .dev. Check all relevant options.",
+          "<strong>Generate in batches.</strong> Don't stop at the first batch. Run multiple generations with slightly different descriptions to explore more of the naming space.",
+          "<strong>Use AI names as inspiration.</strong> Even if you don't use an AI-generated name directly, it can spark ideas you wouldn't have thought of otherwise.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Are AI-generated domain names any good?",
+            answer:
+              "Yes — modern AI generators produce names that are often more creative and brandable than manual brainstorming alone. The key is using a tool that understands natural language context (not just keyword matching) and checks real-time availability so you don't waste time on taken names.",
+          },
+          {
+            question: "Can I trademark an AI-generated domain name?",
+            answer:
+              "Yes. AI-generated names can be trademarked just like any other name, provided they meet standard trademark requirements (distinctive, not confusingly similar to existing marks, etc.). The fact that an AI suggested the name doesn't affect your ability to trademark it. Always search the USPTO database before committing.",
+          },
+          {
+            question: "What's the difference between an AI domain generator and a traditional one?",
+            answer:
+              "Traditional generators use keyword matching and dictionary lookups — they combine your input word with prefixes, suffixes, and other words mechanically. AI generators understand the meaning and context of your description, producing more creative, natural-sounding names. For example, describing a 'meditation app' to an AI might yield names like 'Stillnest' or 'Calmara' — names a keyword combiner would never produce.",
+          },
+          {
+            question: "Is domhaul free to use?",
+            answer:
+              "Yes. domhaul is free to use for both AI domain name generation and bulk domain availability checking. There's no account required, no usage limits, and no hidden paywalls.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Start Generating Domain Names",
+      },
+      {
+        type: "callout",
+        text: "Ready to find your perfect domain? <strong><a href=\"/\" class=\"underline\">Try domhaul</a></strong> — describe your project, choose your TLDs, and get AI-generated domain suggestions with real-time availability checking. Free, fast, no signup required.",
+      },
+    ],
+  },
+  {
+    slug: "what-happens-when-domain-name-expires",
+    title: "What Happens When a Domain Name Expires? The Complete Timeline",
+    description:
+      "Learn exactly what happens after a domain name expires — from grace periods to redemption to public auction. Understand the timeline, protect your domains, and learn how to acquire expired ones.",
+    date: "2026-01-05",
+    keywords: [
+      "domain name expires",
+      "expired domain",
+      "domain expiration",
+      "what happens when domain expires",
+      "domain grace period",
+      "domain redemption period",
+      "expired domain auction",
+      "buy expired domain",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "Every domain name has an expiration date. When that date passes and the domain isn't renewed, a predictable chain of events unfolds — but it's more complex than most people realize. The domain doesn't simply become available for anyone to register the next day. Instead, it goes through several phases that can span weeks or months.",
+      },
+      {
+        type: "paragraph",
+        text: "Understanding this timeline is crucial whether you're trying to protect your own domains from expiring or hoping to acquire a valuable expired domain.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "The Domain Expiration Timeline",
+      },
+      {
+        type: "paragraph",
+        text: "According to <strong><a href=\"https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">ICANN's domain lifecycle documentation</a></strong>, expired domains go through the following phases. The exact timing varies by registrar, but this is the standard progression:",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Phase 1: Expiration Day (Day 0)",
+      },
+      {
+        type: "paragraph",
+        text: "On the expiration date, the domain registration technically lapses. However, the domain <strong>doesn't disappear immediately</strong>. Most registrars will:",
+      },
+      {
+        type: "list",
+        items: [
+          "Suspend the domain — your website and email may stop working",
+          "Replace your website with a parking page or \"this domain has expired\" notice",
+          "Disable outgoing email from the domain",
+          "Keep DNS records intact (but they may stop resolving)",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Phase 2: Grace Period (Days 0-45)",
+      },
+      {
+        type: "paragraph",
+        text: "<strong><a href=\"https://www.icann.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">ICANN</a></strong> requires all registrars to offer a <strong>Renewal Grace Period (RGP)</strong> of at least 30 days after expiration. During this window, the original registrant can renew the domain at the standard renewal price (no penalty fees). Some registrars extend this to 40-45 days.",
+      },
+      {
+        type: "paragraph",
+        text: "This is the easiest and cheapest time to recover an expired domain. If you missed an auto-renewal payment or forgot to update your credit card, renewing during the grace period gets everything back to normal quickly.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Phase 3: Redemption Period (Days 45-75)",
+      },
+      {
+        type: "paragraph",
+        text: "If the domain isn't renewed during the grace period, it enters the <strong>Redemption Grace Period (RGP)</strong>. This lasts approximately 30 days. During this phase:",
+      },
+      {
+        type: "list",
+        items: [
+          "The domain is removed from the DNS and cannot resolve",
+          "The original owner can still reclaim it, but with a <strong>redemption fee</strong> ($80-200+ depending on the registrar)",
+          "The domain cannot be transferred to another registrar",
+          "No one else can register it",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Redemption fees vary significantly by registrar. <strong><a href=\"https://www.godaddy.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">GoDaddy</a></strong> charges $80, while some registrars charge $150-200+. This fee is in addition to the standard renewal cost.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Phase 4: Pending Delete (Days 75-80)",
+      },
+      {
+        type: "paragraph",
+        text: "After the redemption period, the domain enters a <strong>5-day Pending Delete phase</strong>. During these final days:",
+      },
+      {
+        type: "list",
+        items: [
+          "The domain cannot be renewed, transferred, or modified by anyone",
+          "It's queued for deletion from the registry",
+          "This phase is irreversible — the domain will be released",
+          "Domain drop-catching services closely monitor domains in this phase",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Phase 5: Release and Re-Registration (Day 80+)",
+      },
+      {
+        type: "paragraph",
+        text: "After the pending delete phase, the domain is released back to the general pool and becomes available for anyone to register. However, valuable domains rarely make it this far — they're typically caught by <strong>drop-catching services</strong> or <strong>backorder services</strong> within milliseconds of release.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How to Protect Your Domains from Expiring",
+      },
+      {
+        type: "list",
+        ordered: true,
+        items: [
+          "<strong>Enable auto-renewal.</strong> This is the single most important step. Every major registrar offers it. According to <strong><a href=\"https://www.verisign.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Verisign</a></strong>, accidental expiration is one of the most common causes of domain loss.",
+          "<strong>Keep payment methods current.</strong> Auto-renewal only works if the charge goes through. Update expired credit cards promptly.",
+          "<strong>Use a dedicated email for domain management.</strong> Registrars send renewal reminders — make sure these don't go to a monitored inbox or get caught in spam filters.",
+          "<strong>Register for multiple years.</strong> Multi-year registration reduces the chance of forgetting a renewal. Some registrars offer up to 10-year registrations.",
+          "<strong>Enable domain locking.</strong> While this primarily prevents unauthorized transfers, it also adds a layer of protection to your domain management.",
+          "<strong>Set calendar reminders.</strong> Even with auto-renewal enabled, set manual reminders 30 and 60 days before expiration as a backup.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How to Acquire Expired Domain Names",
+      },
+      {
+        type: "paragraph",
+        text: "Expired domains can be valuable — they may have existing backlinks, search engine authority, and brand recognition. Here's how to find and acquire them:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong><a href=\"https://www.expireddomains.net/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">ExpiredDomains.net</a></strong> — The most comprehensive expired domain search engine. Filter by TLD, domain length, backlinks, domain authority, and more.",
+          "<strong><a href=\"https://www.godaddy.com/domain-value-appraisal/auctions\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">GoDaddy Auctions</a></strong> — Major marketplace for expiring and expired domains with bidding.",
+          "<strong><a href=\"https://www.namecheap.com/domains/marketplace/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Namecheap Marketplace</a></strong> — Lists expiring domains available for immediate purchase.",
+          "<strong><a href=\"https://www.snapnames.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">SnapNames</a></strong> — Drop-catching and auction service for expiring domains.",
+          "<strong><a href=\"https://www.dropcatch.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">DropCatch</a></strong> — Specialized in catching domains at the moment they're released.",
+        ],
+      },
+      {
+        type: "callout",
+        text: "Found some expired domain names you're interested in? Use <strong><a href=\"/\" class=\"underline\">domhaul's Check Domains</a></strong> feature to quickly verify availability across multiple names at once before committing.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What Makes an Expired Domain Valuable?",
+      },
+      {
+        type: "paragraph",
+        text: "Not all expired domains are worth acquiring. Here's what to evaluate, using tools like <strong><a href=\"https://ahrefs.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Ahrefs</a></strong>, <strong><a href=\"https://moz.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Moz</a></strong>, or <strong><a href=\"https://majestic.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Majestic</a></strong>:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Backlink profile.</strong> Quality backlinks from authoritative sites are the main value driver. Check the number, quality, and relevance of incoming links.",
+          "<strong>Domain authority (DA/DR).</strong> Higher authority scores indicate established trust with search engines.",
+          "<strong>Domain age.</strong> Older domains have had more time to accumulate authority. According to <strong><a href=\"https://ahrefs.com/blog/how-long-does-it-take-to-rank/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Ahrefs research</a></strong>, the average age of pages ranking #1 on Google is about 2.5 years.",
+          "<strong>Clean history.</strong> Use the <strong><a href=\"https://web.archive.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Wayback Machine</a></strong> to check what the domain was previously used for. Avoid domains with a history of spam, adult content, or malware.",
+          "<strong>Brandability.</strong> Is the name short, memorable, and relevant to your intended use?",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "How long after a domain expires can I buy it?",
+            answer:
+              "The total time from expiration to public availability is approximately 75-80 days — 30-45 days of grace period, 30 days of redemption, and 5 days of pending delete. However, many registrars auction expired domains before they reach the public release phase, so valuable domains may be available for purchase through auction within 45-60 days of expiration.",
+          },
+          {
+            question: "Can I get my expired domain back?",
+            answer:
+              "Yes, if you act quickly. During the 30-45 day grace period, you can renew at the standard price. During the 30-day redemption period, you can still recover it but with a penalty fee ($80-200+). After the pending delete phase, the domain is gone — anyone can register it.",
+          },
+          {
+            question: "Why are some expired domains so expensive?",
+            answer:
+              "Expired domains with strong backlink profiles, high domain authority, or short/memorable names are valuable commodities. They're priced based on their SEO value, brandability, and the difficulty of recreating those assets from scratch. A domain with thousands of quality backlinks and years of authority can be worth far more than a new domain registration.",
+          },
+          {
+            question: "Is buying expired domains good for SEO?",
+            answer:
+              "It can be, but with important caveats. A clean expired domain with quality backlinks can give a new site a head start in SEO. However, Google has gotten much better at detecting and devaluing expired domains used for manipulation. The domain must be used for content relevant to its existing backlink profile, and any spammy history will carry over as a liability.",
+          },
+          {
+            question: "What is domain drop-catching?",
+            answer:
+              "Drop-catching is the practice of automatically registering a domain the instant it's released back to the public after expiration. Specialized services like SnapNames and DropCatch use multiple connections and precise timing to capture high-value domains within milliseconds of their release. This is why valuable domains rarely become available through normal registration.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-much-is-domain-name-worth",
+    title: "How Much Is a Domain Name Worth? A Complete Valuation Guide",
+    description:
+      "Learn how to estimate the value of any domain name. Covers valuation methods, pricing factors, appraisal tools, and real sales data to help you buy or sell domains at fair prices.",
+    date: "2025-12-28",
+    keywords: [
+      "domain name value",
+      "how much is my domain worth",
+      "domain appraisal",
+      "domain name valuation",
+      "domain name pricing",
+      "domain name worth",
+      "sell domain name",
+      "domain name price guide",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "Whether you're buying a domain on the aftermarket, selling one you own, or just curious about your digital real estate, understanding domain valuation is essential. Domain pricing isn't arbitrary — there are clear factors that drive value, established appraisal methods, and extensive sales data to reference.",
+      },
+      {
+        type: "paragraph",
+        text: "This guide covers everything you need to know about domain name valuation, with real data from industry sources and practical tools you can use today.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What Determines a Domain Name's Value?",
+      },
+      {
+        type: "paragraph",
+        text: "Domain valuation is part science, part art. Here are the key factors that appraisers and buyers consider, roughly in order of importance:",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "1. Length",
+      },
+      {
+        type: "paragraph",
+        text: "Shorter domains are exponentially more valuable. According to <strong><a href=\"https://www.namebio.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">NameBio</a></strong> sales data, the average sale price increases dramatically as domain length decreases:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>1-2 character .coms</strong> — $100,000 to millions",
+          "<strong>3-4 character .coms</strong> — $5,000 to $500,000+",
+          "<strong>5-6 character .coms</strong> — $500 to $50,000",
+          "<strong>7-10 character .coms</strong> — $100 to $10,000",
+          "<strong>10+ characters</strong> — Usually registration price unless the word itself is valuable",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "2. TLD (Extension)",
+      },
+      {
+        type: "paragraph",
+        text: "<strong>.com</strong> domains command the highest prices by far. The same name on .net might be worth 10-20% of the .com value, and on .org even less. Newer TLDs like .io, .app, and .ai are building value but still trail .com significantly in the aftermarket.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "3. Keywords and Commercial Intent",
+      },
+      {
+        type: "paragraph",
+        text: "Domains containing high-value keywords — especially those with commercial intent — command premium prices. Industries like insurance, finance, real estate, and healthcare have the highest keyword values according to <strong><a href=\"https://www.wordstream.com/blog/ws/2017/06/27/most-expensive-keywords\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">WordStream's keyword research</a></strong>.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "4. Brandability",
+      },
+      {
+        type: "paragraph",
+        text: "A domain that sounds like a brand name — short, distinctive, easy to pronounce — carries a premium over generic or descriptive names. Coined words (Figma, Zapier) and metaphorical names (Slack, Stripe) are highly valued because they can anchor a unique brand.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "5. Backlinks and Domain Authority",
+      },
+      {
+        type: "paragraph",
+        text: "Domains with existing quality backlinks from authoritative sites carry SEO value. Tools like <strong><a href=\"https://ahrefs.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Ahrefs</a></strong> (Domain Rating) and <strong><a href=\"https://moz.com/domain-analysis\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Moz</a></strong> (Domain Authority) provide numerical scores that help quantify this value.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "6. Domain Age and History",
+      },
+      {
+        type: "paragraph",
+        text: "Older domains are generally more valuable, as they've had more time to accumulate authority. However, the domain's <em>history</em> matters too — a domain previously used for spam is worth less than a clean, unused one. Check history using the <strong><a href=\"https://web.archive.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Wayback Machine</a></strong>.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "The Most Expensive Domain Names Ever Sold",
+      },
+      {
+        type: "paragraph",
+        text: "Looking at record-breaking sales provides context for how the market values premium domains. According to <strong><a href=\"https://www.namebio.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">NameBio</a></strong> and public sales records:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>cars.com</strong> — $872 million (business sale including the domain)",
+          "<strong>insurance.com</strong> — $35.6 million",
+          "<strong>voice.com</strong> — $30 million",
+          "<strong>internet.com</strong> — $18 million",
+          "<strong>hotels.com</strong> — $11 million",
+          "<strong>sex.com</strong> — $13 million",
+          "<strong>fund.com</strong> — $10 million",
+          "<strong>crypto.com</strong> — Estimated $10-12 million",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These are outliers, of course. The median domain aftermarket sale is around $2,000-3,000 for .com domains. But they illustrate the upper bound of domain value and why the domain industry is a multi-billion dollar market.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Free Domain Appraisal Tools",
+      },
+      {
+        type: "paragraph",
+        text: "Several free tools can give you a ballpark estimate of a domain's value. Keep in mind that automated appraisals are rough estimates — real market value depends on finding a willing buyer:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong><a href=\"https://www.godaddy.com/domain-value-appraisal\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">GoDaddy Domain Appraisal</a></strong> — Uses machine learning trained on millions of domain sales. Free and widely used. Tends to be conservative but reasonable.",
+          "<strong><a href=\"https://www.estibot.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">EstiBot</a></strong> — One of the oldest automated appraisal tools. Analyzes comparable sales, keyword values, and traffic estimates.",
+          "<strong><a href=\"https://www.namebio.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">NameBio</a></strong> — Not an appraisal tool per se, but a database of past domain sales. Search for comparable names to gauge market value.",
+        ],
+      },
+      {
+        type: "callout",
+        text: "<strong>Important:</strong> Automated appraisals should be used as a starting point, not a definitive answer. The real value of a domain is what someone is willing to pay for it. Two appraisal tools can give wildly different estimates for the same domain.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How to Price a Domain You're Selling",
+      },
+      {
+        type: "list",
+        ordered: true,
+        items: [
+          "<strong>Research comparable sales.</strong> Use <strong><a href=\"https://www.namebio.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">NameBio</a></strong> to find recent sales of similar domains (same length, TLD, keyword category).",
+          "<strong>Get multiple automated appraisals.</strong> Run the domain through GoDaddy Appraisal, EstiBot, and any other free tools. Average the results for a baseline.",
+          "<strong>Assess the buyer's context.</strong> A domain is worth more to a well-funded startup in a relevant industry than to a casual buyer. End-user sales typically command 3-10x what a domain investor would pay.",
+          "<strong>Factor in your costs.</strong> Consider what you paid, annual renewals, and opportunity cost. But don't let sunk costs inflate your asking price beyond market value.",
+          "<strong>Be willing to negotiate.</strong> Most domain sales involve negotiation. List slightly above your target price to leave room.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Where to Sell Domain Names",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong><a href=\"https://dan.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Dan.com</a></strong> — Modern marketplace with easy listing, installment payments, and a 9% commission. Popular with domain investors.",
+          "<strong><a href=\"https://www.afternic.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Afternic</a></strong> — Owned by GoDaddy, with distribution across a network of registrars. Large buyer audience.",
+          "<strong><a href=\"https://sedo.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Sedo</a></strong> — One of the oldest and largest domain marketplaces. Also offers brokerage services.",
+          "<strong><a href=\"https://www.namecheap.com/domains/marketplace/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Namecheap Marketplace</a></strong> — Integrated with Namecheap's registrar for easy listing.",
+          "<strong><a href=\"https://www.squadhelp.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Squadhelp</a></strong> — Curated marketplace focused on brandable, startup-quality names.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "How accurate are domain appraisal tools?",
+            answer:
+              "Automated appraisals are rough estimates — typically within 50-200% of actual sale prices. They're useful as a ballpark but shouldn't be treated as definitive. The most reliable method is researching comparable recent sales on NameBio. Automated tools tend to undervalue highly brandable names and overvalue generic keyword domains.",
+          },
+          {
+            question: "What makes a one-word .com domain so valuable?",
+            answer:
+              "Single-word .com domains are valued for their extreme scarcity, instant memorability, and brandability. There are roughly 170,000 common English words, and virtually every one-word .com is registered. The supply is fixed while demand from businesses continues to grow, driving prices upward. A one-word .com signals authority and professionalism that no multi-word domain can match.",
+          },
+          {
+            question: "Should I invest in domain names?",
+            answer:
+              "Domain investing (also called domaining) can be profitable but requires expertise, patience, and capital. Most registered domains never sell. Successful domain investors focus on short, brandable .com names in growing industries and hold them for months or years. It's not a get-rich-quick scheme — it's more like real estate investing, requiring market knowledge and a long-term outlook.",
+          },
+          {
+            question: "How do I find out what my domain is worth?",
+            answer:
+              "Start with free appraisal tools (GoDaddy Appraisal, EstiBot), then research comparable sales on NameBio. Check the domain's backlink profile with Ahrefs or Moz, and verify its history on the Wayback Machine. For domains potentially worth $5,000+, consider a professional appraisal from a service like Sedo's brokerage team.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "short-domain-names",
+    title: "Short Domain Names: Why They're Valuable and How to Find Available Ones",
+    description:
+      "Short domain names are the most sought-after digital assets on the internet. Learn why brevity matters, what short domains sell for, and strategies to find available ones in 2026.",
+    date: "2025-12-20",
+    keywords: [
+      "short domain names",
+      "short domain name ideas",
+      "3 letter domain",
+      "4 letter domain",
+      "one word domain",
+      "short domain availability",
+      "premium domain names",
+      "short domain finder",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "In the domain world, shorter almost always means better. Short domain names are easier to type, easier to remember, and easier to share — and the market values them accordingly. But with hundreds of millions of domains registered, finding a short, available name requires creativity and strategy.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Why Short Domains Command Premium Prices",
+      },
+      {
+        type: "paragraph",
+        text: "The value of short domains comes down to basic economics: <strong>fixed supply meets growing demand</strong>. There are only 676 possible two-letter .com combinations, 17,576 three-letter combinations, and 456,976 four-letter combinations. Every single one of these is registered on .com.",
+      },
+      {
+        type: "paragraph",
+        text: "According to <strong><a href=\"https://www.namebio.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">NameBio</a></strong> sales data, average prices by domain length tell a clear story:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>2-letter .coms</strong> — Average sale price: $150,000+ (some exceeding $1 million)",
+          "<strong>3-letter .coms</strong> — Average sale price: $10,000-50,000",
+          "<strong>4-letter .coms</strong> — Average sale price: $1,000-10,000 (pronounceable ones command more)",
+          "<strong>5-letter .coms</strong> — Average sale price: $500-5,000",
+          "<strong>Single-word .coms</strong> — Highly variable; common English words average $10,000+",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "The Science Behind Short Domain Value",
+      },
+      {
+        type: "paragraph",
+        text: "Research in cognitive psychology supports the value of short names. <strong><a href=\"https://en.wikipedia.org/wiki/Miller%27s_law\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Miller's Law</a></strong> suggests that working memory can hold approximately 7 (plus or minus 2) chunks of information. A short domain name occupies fewer memory chunks, making it significantly easier to recall.",
+      },
+      {
+        type: "paragraph",
+        text: "Studies in <strong><a href=\"https://hbr.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Harvard Business Review</a></strong> on brand name processing have shown that shorter names are processed more fluently — the brain recognizes and evaluates them faster. This \"processing fluency\" translates directly into perceived trustworthiness and preference.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Real-World Impact of Domain Length",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Fewer typos.</strong> Every character is an opportunity for a typing error. Shorter domains lose less traffic to typos.",
+          "<strong>Better for mobile.</strong> On small screens, every character counts. Short domains fit better in URLs, text messages, and social posts.",
+          "<strong>Easier word-of-mouth.</strong> If you tell someone your domain in a noisy bar, can they remember it? Short names pass this test more reliably.",
+          "<strong>Professional appearance.</strong> Short domains look cleaner in email addresses (you@brand.com vs you@my-long-company-name.com).",
+          "<strong>Social media fit.</strong> Character limits on platforms like Twitter/X make short domains valuable for sharing links.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How to Find Available Short Domain Names",
+      },
+      {
+        type: "paragraph",
+        text: "Finding a short, available domain name in 2026 requires creative strategies. Here are approaches that actually work:",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "1. Explore Alternative TLDs",
+      },
+      {
+        type: "paragraph",
+        text: "While every short .com is taken, newer TLDs offer vastly better availability. A name like \"kova.app\" or \"zune.dev\" might be available at standard registration prices — names that would cost thousands on .com.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "2. Coin New Words",
+      },
+      {
+        type: "paragraph",
+        text: "Invented words are one of the best paths to short, available domains. Think \"Hulu\" (4 letters), \"Roku\" (4 letters), or \"Etsy\" (4 letters). These names were available because they didn't exist as words before. Combine consonants and vowels in unusual but pronounceable ways.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "3. Use Non-English Words",
+      },
+      {
+        type: "paragraph",
+        text: "Short words from other languages that are easy for English speakers to pronounce can yield available domains. \"Luma\" (Latin for light), \"Kero\" (Japanese), or \"Vela\" (Spanish for sail) are examples of cross-language names that work globally.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "4. Use AI to Generate Short Names",
+      },
+      {
+        type: "paragraph",
+        text: "AI domain generators excel at creating short, brandable names because they can explore naming patterns humans wouldn't think of. Describe your project and specify that you want short names.",
+      },
+      {
+        type: "callout",
+        text: "<strong><a href=\"/\" class=\"underline\">domhaul</a></strong> generates creative, short domain names from a project description and checks availability instantly. The AI naturally favors concise, brandable names — perfect for finding those elusive short domains.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Famous Short Domain Names and Their Stories",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong><a href=\"https://x.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">x.com</a></strong> — Originally Elon Musk's online bank (1999), later became PayPal, repurchased by Musk and now rebranded as Twitter/X. Perhaps the most iconic single-letter domain.",
+          "<strong><a href=\"https://i.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">a.com</a></strong> — Two-letter domains are among the most valuable digital assets, with most owned by major corporations.",
+          "<strong>fb.com</strong> — Purchased by Facebook (now Meta) for an estimated $8.5 million to match their stock ticker.",
+          "<strong><a href=\"https://arc.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">arc.net</a></strong> — The Browser Company's 3-letter domain for their Arc browser.",
+          "<strong><a href=\"https://cal.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">cal.com</a></strong> — Acquired by the open-source scheduling company, replacing their longer domain.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Are all short .com domains taken?",
+            answer:
+              "Yes — all 2, 3, and 4-letter .com domains are registered. Most 5-letter common word combinations are also taken. However, short domains on alternative TLDs (.app, .dev, .io) have much better availability. Additionally, coined/invented words of 5-6 characters can still be found on .com with persistence.",
+          },
+          {
+            question: "How short should my domain be?",
+            answer:
+              "Aim for under 10 characters as a general rule, and under 7 for the best memorability. The average domain among the top 100 websites is about 6 characters. That said, a clear 12-character domain is better than a confusing 5-character one — clarity trumps brevity.",
+          },
+          {
+            question: "Is a 3-letter domain always better than a longer word domain?",
+            answer:
+              "Not necessarily. A 3-letter domain like 'QZJ.com' is short but meaningless and hard to brand around. A slightly longer but meaningful domain like 'Notion.so' or 'Linear.app' is far more valuable as a brand. The ideal is a short domain that also has meaning or brandability.",
+          },
+          {
+            question: "Where can I buy premium short domains?",
+            answer:
+              "Premium short domains are available through aftermarket platforms like Dan.com, Afternic, Sedo, and GoDaddy Auctions. For ultra-premium names (single words, 2-3 letter combinations), consider working with a domain broker who specializes in high-value transactions. Expect to pay $1,000-$100,000+ for desirable short .com domains.",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export function getAllPosts(): BlogPost[] {

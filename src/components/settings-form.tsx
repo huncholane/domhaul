@@ -7,6 +7,7 @@ import {
   type AiProvider,
   type Settings,
 } from "@/lib/settings";
+import { NumberStepper } from "./number-stepper";
 
 const PROVIDERS: { value: AiProvider; label: string; description: string }[] = [
   {
@@ -238,21 +239,12 @@ export function SettingsForm() {
           >
             Default names per search
           </label>
-          <input
+          <NumberStepper
             id="name-count"
-            type="number"
+            value={settings.defaultNameCount}
+            onChange={(v) => update({ defaultNameCount: v })}
             min={1}
             max={50}
-            value={settings.defaultNameCount}
-            onChange={(e) =>
-              update({
-                defaultNameCount: Math.min(
-                  Math.max(parseInt(e.target.value) || 1, 1),
-                  50
-                ),
-              })
-            }
-            className="w-32 rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-2.5 text-sm text-zinc-100 focus:border-indigo-500/50 focus:outline-none focus:ring-1 focus:ring-indigo-500/50"
           />
         </div>
         <div>
@@ -262,21 +254,12 @@ export function SettingsForm() {
           >
             Max rounds per search
           </label>
-          <input
+          <NumberStepper
             id="max-rounds"
-            type="number"
+            value={settings.maxRounds}
+            onChange={(v) => update({ maxRounds: v })}
             min={1}
             max={20}
-            value={settings.maxRounds}
-            onChange={(e) =>
-              update({
-                maxRounds: Math.min(
-                  Math.max(parseInt(e.target.value) || 1, 1),
-                  20
-                ),
-              })
-            }
-            className="w-32 rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-2.5 text-sm text-zinc-100 focus:border-indigo-500/50 focus:outline-none focus:ring-1 focus:ring-indigo-500/50"
           />
           <p className="mt-1 text-xs text-zinc-500">
             Used when &ldquo;find at least N&rdquo; is set

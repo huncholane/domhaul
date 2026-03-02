@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { TldSelector } from "./tld-selector";
+import { NumberStepper } from "./number-stepper";
 import { DEFAULT_TLDS, DEFAULT_NAME_COUNT, MAX_AVAILABLE_TARGET, type TLD } from "@/lib/constants";
 
 export interface SearchParams {
@@ -64,17 +65,13 @@ export function SearchForm({
           >
             Names to generate
           </label>
-          <input
+          <NumberStepper
             id="name-count"
-            type="number"
+            value={nameCount}
+            onChange={setNameCount}
             min={1}
             max={50}
-            value={nameCount}
-            onChange={(e) =>
-              setNameCount(Math.min(Math.max(parseInt(e.target.value) || 1, 1), 50))
-            }
             disabled={disabled}
-            className="w-24 rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2.5 text-sm text-zinc-100 focus:border-indigo-500/50 focus:outline-none focus:ring-1 focus:ring-indigo-500/50 disabled:opacity-50"
           />
         </div>
         <div>
@@ -84,19 +81,13 @@ export function SearchForm({
           >
             Find at least N available
           </label>
-          <input
+          <NumberStepper
             id="available-target"
-            type="number"
+            value={availableTarget}
+            onChange={setAvailableTarget}
             min={0}
             max={MAX_AVAILABLE_TARGET}
-            value={availableTarget}
-            onChange={(e) =>
-              setAvailableTarget(
-                Math.min(Math.max(parseInt(e.target.value) || 0, 0), MAX_AVAILABLE_TARGET)
-              )
-            }
             disabled={disabled}
-            className="w-24 rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2.5 text-sm text-zinc-100 focus:border-indigo-500/50 focus:outline-none focus:ring-1 focus:ring-indigo-500/50 disabled:opacity-50"
           />
           <p className="mt-1 text-xs text-zinc-500">0 = single round</p>
         </div>

@@ -7,6 +7,7 @@ import { ResultsPanel } from "@/components/results-panel";
 import type { DomainResult, StreamEvent } from "@/lib/types";
 import { loadSettings, getEffectiveProvider, type Settings, type AiProvider } from "@/lib/settings";
 import { orchestrate } from "@/lib/orchestrator";
+import { saveSearch, consumeRerunEntry } from "@/lib/search-history";
 
 type Mode = "generate" | "check";
 type Phase = "idle" | "generating" | "checking" | "done";
@@ -99,11 +100,22 @@ export default function Home() {
   const abortRef = useRef<AbortController | null>(null);
   const [settings, setSettings] = useState<Settings | null>(null);
   const [provider, setProvider] = useState<AiProvider>("server");
+  const [pendingRerun, setPendingRerun] = useState<SearchParams | null>(null);
 
   useEffect(() => {
     const s = loadSettings();
     setSettings(s);
     setProvider(getEffectiveProvider(s));
+
+    const rerun = consumeRerunEntry();
+    if (rerun) {
+      setPendingRerun({
+        description: rerun.description,
+        tlds: rerun.tlds,
+        nameCount: rerun.nameCount,
+        availableTarget: rerun.availableTarget,
+      });
+    }
   }, []);
 
   const isActive = state.phase === "generating" || state.phase === "checking";
@@ -140,6 +152,11 @@ export default function Home() {
       abortRef.current = controller;
       dispatch({ type: "START" });
 
+      let totalChecked = 0;
+      let availableFound = 0;
+      let roundsUsed = 1;
+      const allResults: import("@/lib/types").DomainResult[] = [];
+
       try {
         await orchestrate({
           description: params.description,
@@ -149,7 +166,29 @@ export default function Home() {
           provider,
           settings,
           signal: controller.signal,
-          onEvent: handleEvent,
+          onEvent: (event) => {
+            handleEvent(event);
+            if (event.type === "result") {
+              totalChecked++;
+              allResults.push(event.result);
+              if (event.result.available === true) availableFound++;
+            }
+            if (event.type === "round") {
+              roundsUsed = event.round;
+            }
+          },
+        });
+
+        // Save to history on successful completion
+        saveSearch({
+          description: params.description,
+          tlds: params.tlds,
+          nameCount: params.nameCount,
+          availableTarget: params.availableTarget,
+          availableFound,
+          totalChecked,
+          roundsUsed,
+          results: allResults,
         });
       } catch (err) {
         if (err instanceof DOMException && err.name === "AbortError") {
@@ -179,6 +218,15 @@ export default function Home() {
     abortRef.current?.abort();
     dispatch({ type: "CANCEL" });
   }
+
+  // Auto-run if navigated from history re-run
+  useEffect(() => {
+    if (pendingRerun && settings) {
+      setPendingRerun(null);
+      handleGenerate(pendingRerun);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pendingRerun, settings]);
 
   return (
     <div className="mx-auto min-h-screen max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
@@ -277,6 +325,7 @@ export default function Home() {
         round={state.round}
         maxRounds={state.maxRounds}
       />
+
     </div>
   );
 }

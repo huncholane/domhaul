@@ -47,7 +47,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-zinc-950 font-sans text-zinc-100 antialiased`}
       >
-        <nav className="fixed right-4 top-4 z-50">
+        <nav className="fixed right-4 top-4 z-50 flex gap-2">
+          <Link
+            href="/history"
+            className="rounded-md bg-zinc-900 px-3 py-1.5 text-xs font-medium text-zinc-400 transition-colors hover:bg-zinc-800 hover:text-zinc-200"
+          >
+            History
+          </Link>
           <Link
             href="/settings"
             className="rounded-md bg-zinc-900 px-3 py-1.5 text-xs font-medium text-zinc-400 transition-colors hover:bg-zinc-800 hover:text-zinc-200"

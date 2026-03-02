@@ -1018,6 +1018,505 @@ const posts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-to-buy-a-domain-name",
+    title: "How to Buy a Domain Name: A Complete Step-by-Step Guide for 2026",
+    description:
+      "Learn exactly how to buy a domain name in 2026 — from choosing a registrar to completing your purchase. Covers pricing, WHOIS privacy, DNS setup, and tips for getting the best deal.",
+    date: "2026-02-01",
+    keywords: [
+      "how to buy a domain name",
+      "buy domain name",
+      "register domain name",
+      "domain name registration",
+      "buy a domain",
+      "purchase domain name",
+      "domain registrar",
+      "register a website name",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "Buying a domain name is one of the first steps in building any online presence — whether you're launching a business, starting a blog, or creating a portfolio. The process is straightforward once you know what to expect, but there are important decisions along the way that can save you money and headaches down the road.",
+      },
+      {
+        type: "paragraph",
+        text: "This guide walks you through the entire process, from finding an available name to completing your purchase and setting up DNS.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Step 1: Choose Your Domain Name",
+      },
+      {
+        type: "paragraph",
+        text: "Before you can buy a domain, you need to decide what name you want. This is often the hardest part — you need something short, memorable, and available. If you already have a name in mind, great. If not, here are ways to generate ideas:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Brainstorm manually.</strong> Write down words related to your brand, product, or industry. Combine them in different ways.",
+          "<strong>Use an AI domain generator.</strong> Tools like <a href=\"/\" class=\"underline\">domhaul</a> let you describe your project and get AI-generated domain suggestions with real-time availability checking.",
+          "<strong>Check competitor domains.</strong> Look at what names similar companies use for inspiration (don't copy — just observe patterns).",
+          "<strong>Try word combinations.</strong> Compound words (Mailchimp, Dropbox), modified words (Spotify, Calendly), and metaphors (Slack, Stripe) are all proven naming strategies.",
+        ],
+      },
+      {
+        type: "callout",
+        text: "Need help brainstorming? <strong><a href=\"/\" class=\"underline\">domhaul</a></strong> generates creative domain names from a simple description of your project and checks availability across multiple TLDs instantly.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Step 2: Check Domain Availability",
+      },
+      {
+        type: "paragraph",
+        text: "Once you have a shortlist of names, you need to verify they're actually available for registration. There are over <strong>350 million registered domain names</strong> worldwide according to <strong><a href=\"https://www.verisign.com/en_US/domain-names/dnib/index.xhtml\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Verisign's Domain Name Industry Brief</a></strong>, so many names — especially short .com domains — are already taken.",
+      },
+      {
+        type: "paragraph",
+        text: "You can check availability through any domain registrar's search tool, or use a dedicated tool like <a href=\"/\" class=\"underline\">domhaul</a> to check multiple names across multiple TLDs simultaneously.",
+      },
+      {
+        type: "paragraph",
+        text: "If your first-choice domain is taken, you have several options:",
+      },
+      {
+        type: "list",
+        ordered: true,
+        items: [
+          "<strong>Try a different TLD.</strong> If \"yourname.com\" is taken, \"yourname.app\" or \"yourname.dev\" might be available.",
+          "<strong>Modify the name slightly.</strong> Add a prefix (get, try, use) or tweak the wording.",
+          "<strong>Buy it on the aftermarket.</strong> Many taken domains are parked and available for purchase through marketplaces like <strong><a href=\"https://www.afternic.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Afternic</a></strong>, <strong><a href=\"https://sedo.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Sedo</a></strong>, or <strong><a href=\"https://dan.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Dan.com</a></strong>.",
+          "<strong>Contact the current owner.</strong> Use WHOIS lookup to find the registrant and make a direct offer.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Step 3: Choose a Domain Registrar",
+      },
+      {
+        type: "paragraph",
+        text: "A domain registrar is the company you purchase and manage your domain through. They're accredited by <strong><a href=\"https://www.icann.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">ICANN</a></strong> (the Internet Corporation for Assigned Names and Numbers) to sell domain names. Not all registrars are created equal — they differ in pricing, features, and support quality.",
+      },
+      {
+        type: "paragraph",
+        text: "Here are the most reputable registrars in 2026:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong><a href=\"https://www.cloudflare.com/products/registrar/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Cloudflare Registrar</a></strong> — Sells domains at wholesale cost with no markup. Free WHOIS privacy. Best value for most people.",
+          "<strong><a href=\"https://www.namecheap.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Namecheap</a></strong> — Affordable pricing, free WHOIS privacy, excellent UI. One of the most popular registrars for individuals and small businesses.",
+          "<strong><a href=\"https://porkbun.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Porkbun</a></strong> — Low prices, free WHOIS privacy, free SSL certificates. A favorite among developers.",
+          "<strong><a href=\"https://domains.google/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Google Domains</a></strong> (now Squarespace Domains) — Clean interface, transparent pricing, integrated with Google Workspace.",
+          "<strong><a href=\"https://www.godaddy.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">GoDaddy</a></strong> — The largest registrar by market share. Low introductory pricing but watch for higher renewal rates and aggressive upselling.",
+        ],
+      },
+      {
+        type: "callout",
+        text: "<strong>Pro tip:</strong> Always compare the <em>renewal price</em>, not just the first-year price. Some registrars offer cheap first-year rates ($0.99) but charge $15-20/year on renewal. <strong>Cloudflare Registrar</strong> is notable for charging the same wholesale price every year with no markup.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Step 4: Register Your Domain",
+      },
+      {
+        type: "paragraph",
+        text: "Once you've chosen your registrar, the purchase process is straightforward:",
+      },
+      {
+        type: "list",
+        ordered: true,
+        items: [
+          "<strong>Search for your domain</strong> on the registrar's website.",
+          "<strong>Add it to your cart</strong> and select your registration period (1 year is standard; some registrars offer discounts for multi-year registration).",
+          "<strong>Enable WHOIS privacy</strong> (also called \"domain privacy\" or \"ID protection\"). This hides your personal contact information from public WHOIS databases. Most good registrars include this for free.",
+          "<strong>Skip the add-ons.</strong> Registrars will try to upsell you on hosting, email, SSL certificates, website builders, and \"premium DNS.\" You almost certainly don't need any of these at registration time.",
+          "<strong>Complete the purchase.</strong> You'll need to provide valid contact information (required by ICANN, but hidden if WHOIS privacy is enabled).",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Step 5: Configure DNS Settings",
+      },
+      {
+        type: "paragraph",
+        text: "After purchasing your domain, you need to point it to your website. This is done through <strong>DNS (Domain Name System)</strong> settings. DNS translates your domain name into the IP address of the server hosting your website.",
+      },
+      {
+        type: "paragraph",
+        text: "The exact process depends on your hosting provider. Most modern platforms like <strong><a href=\"https://vercel.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Vercel</a></strong>, <strong><a href=\"https://www.netlify.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Netlify</a></strong>, and <strong><a href=\"https://railway.app/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Railway</a></strong> provide step-by-step instructions for connecting a custom domain. Generally, you'll need to:",
+      },
+      {
+        type: "list",
+        ordered: true,
+        items: [
+          "<strong>Add an A record</strong> pointing to your host's IP address, or a <strong>CNAME record</strong> pointing to your host's domain.",
+          "<strong>Set up the www subdomain</strong> with a CNAME record pointing to your main domain.",
+          "<strong>Wait for DNS propagation.</strong> Changes can take up to 48 hours to propagate globally, though most updates take effect within 1-2 hours.",
+          "<strong>Enable SSL/HTTPS.</strong> Most hosting providers offer free SSL certificates through <strong><a href=\"https://letsencrypt.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Let's Encrypt</a></strong>. Make sure HTTPS is working before launching.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How Much Does a Domain Name Cost?",
+      },
+      {
+        type: "paragraph",
+        text: "Domain pricing varies significantly depending on the TLD, registrar, and whether the name is a standard or premium registration:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>.com</strong> — $8-15/year (standard registration)",
+          "<strong>.io</strong> — $30-50/year",
+          "<strong>.app</strong> — $12-20/year",
+          "<strong>.dev</strong> — $12-18/year",
+          "<strong>.co</strong> — $25-35/year",
+          "<strong>.ai</strong> — $50-100/year",
+          "<strong>.org</strong> — $10-15/year",
+          "<strong>.net</strong> — $10-15/year",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Premium domains (short, common words, or highly desirable names) can cost significantly more on the aftermarket. According to <strong><a href=\"https://www.namebio.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">NameBio</a></strong>, which tracks domain sales, the median .com aftermarket sale price in recent years has been around $2,000-3,000, while premium single-word .coms regularly sell for six or seven figures.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Common Mistakes When Buying a Domain Name",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Forgetting to enable auto-renewal.</strong> If your domain registration lapses, someone else can register it. Always enable auto-renewal and keep your payment method current.",
+          "<strong>Skipping WHOIS privacy.</strong> Without it, your personal name, address, phone number, and email are publicly visible in WHOIS databases — leading to spam and potential security risks.",
+          "<strong>Falling for upsells.</strong> You don't need \"premium DNS,\" \"domain parking,\" or \"website security\" add-ons from your registrar. These are profit centers for registrars, not necessities.",
+          "<strong>Not checking trademark conflicts.</strong> Search the <strong><a href=\"https://www.uspto.gov/trademarks/search\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">USPTO trademark database</a></strong> before purchasing to avoid potential legal issues.",
+          "<strong>Registering with a disreputable registrar.</strong> Some registrars engage in domain front-running (registering domains you search for) or make transfers difficult. Stick to well-known, ICANN-accredited registrars.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Do I own my domain name forever after buying it?",
+            answer:
+              "No. Domain registration is a lease, not a purchase. You register the right to use a domain for a set period (typically 1-10 years) and must renew it before it expires. If you don't renew, the domain eventually becomes available for anyone to register. Always enable auto-renewal to prevent accidental loss.",
+          },
+          {
+            question: "Can I buy a domain name that's already taken?",
+            answer:
+              "Yes, if the current owner is willing to sell. You can check aftermarket platforms like Afternic, Sedo, or Dan.com for listed domains. For unlisted domains, you can use WHOIS to find the owner's contact information and make a direct offer. Services like Sedo and DAN also offer domain brokerage to negotiate on your behalf.",
+          },
+          {
+            question: "What is WHOIS privacy and do I need it?",
+            answer:
+              "WHOIS is a public database that lists the registrant's name, address, phone number, and email for every domain. WHOIS privacy (also called domain privacy or ID protection) replaces your personal information with the registrar's proxy information. You should always enable it — it prevents spam, protects your privacy, and is free with most reputable registrars.",
+          },
+          {
+            question: "Can I transfer my domain to a different registrar later?",
+            answer:
+              "Yes. ICANN rules require registrars to allow transfers. You'll need to unlock the domain, get an authorization code (EPP code) from your current registrar, and initiate the transfer with your new registrar. Transfers typically take 5-7 days. Note: domains cannot be transferred within the first 60 days after registration.",
+          },
+          {
+            question: "Should I register my domain for multiple years?",
+            answer:
+              "It depends. Multi-year registration prevents accidental expiration and sometimes comes with a small discount. However, there's no SEO benefit to longer registrations — Google has confirmed this. For most people, 1-year registration with auto-renewal enabled is sufficient.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Ready to Get Started?",
+      },
+      {
+        type: "paragraph",
+        text: "Buying a domain name takes just a few minutes once you've decided on a name. The hardest part is finding one that's available, memorable, and fits your brand. Start with brainstorming, check availability, pick a reputable registrar, and you'll be online in no time.",
+      },
+      {
+        type: "callout",
+        text: "Not sure what domain to get? <strong><a href=\"/\" class=\"underline\">Try domhaul</a></strong> — describe your project in a sentence and get AI-generated domain suggestions with instant availability checking. It's the fastest way to find a domain name you'll love.",
+      },
+    ],
+  },
+  {
+    slug: "best-domain-registrars",
+    title: "Best Domain Name Registrars in 2026: An Honest Comparison",
+    description:
+      "A detailed, no-BS comparison of the best domain registrars in 2026. We compare Cloudflare, Namecheap, Porkbun, Google Domains, GoDaddy, and more on pricing, features, and reliability.",
+    date: "2026-01-25",
+    keywords: [
+      "best domain registrar",
+      "domain registrar comparison",
+      "cheapest domain registrar",
+      "best place to buy domain",
+      "Namecheap vs GoDaddy",
+      "Cloudflare registrar",
+      "Porkbun review",
+      "domain registrar 2026",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "Where you register your domain matters more than you might think. The registrar you choose affects your annual costs, renewal pricing, transfer flexibility, security features, and overall management experience. Some registrars are transparent and developer-friendly; others rely on upselling, hidden fees, and confusing interfaces.",
+      },
+      {
+        type: "paragraph",
+        text: "We've used and evaluated every major registrar over the years. Here's our honest breakdown of the best options in 2026, with real pricing data and clear recommendations.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What to Look for in a Domain Registrar",
+      },
+      {
+        type: "paragraph",
+        text: "Before diving into specific registrars, here are the factors that actually matter:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Renewal pricing.</strong> The most important number. First-year promotional prices mean nothing if the renewal is 3x higher.",
+          "<strong>Free WHOIS privacy.</strong> This should be standard and free. If a registrar charges extra for it, that's a red flag.",
+          "<strong>Easy transfers.</strong> You should be able to transfer your domain away without obstacles. Some registrars make this deliberately difficult.",
+          "<strong>Clean interface.</strong> You'll manage DNS records, renewals, and settings here. A confusing UI wastes time.",
+          "<strong>No aggressive upselling.</strong> Good registrars sell you a domain. Bad ones try to sell you 15 add-ons at checkout.",
+          "<strong>DNSSEC support.</strong> DNS Security Extensions protect against DNS spoofing attacks. <strong><a href=\"https://www.icann.org/resources/pages/dnssec-what-is-it-why-is-it-important-2019-03-05-en\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">ICANN recommends DNSSEC</a></strong> for all domains.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "1. Cloudflare Registrar — Best Overall Value",
+      },
+      {
+        type: "paragraph",
+        text: "<strong><a href=\"https://www.cloudflare.com/products/registrar/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Cloudflare Registrar</a></strong> is unique in that it sells domains <strong>at wholesale cost with zero markup</strong>. They don't profit from domain sales — registrar services are a complementary feature to bring people into the Cloudflare ecosystem.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>.com price:</strong> ~$9.15/year (wholesale cost, same every year)",
+          "<strong>WHOIS privacy:</strong> Free",
+          "<strong>DNSSEC:</strong> One-click setup",
+          "<strong>Upselling:</strong> None",
+          "<strong>Interface:</strong> Clean, developer-focused dashboard",
+          "<strong>Catch:</strong> Must use Cloudflare's nameservers (free plan available). Cannot search/register new domains without an existing Cloudflare account.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "<strong>Best for:</strong> Developers and businesses already using (or willing to use) Cloudflare for DNS/CDN. Unbeatable pricing.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "2. Namecheap — Best All-Around Registrar",
+      },
+      {
+        type: "paragraph",
+        text: "<strong><a href=\"https://www.namecheap.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Namecheap</a></strong> has been one of the most popular registrars since 2000 and consistently ranks among the best for pricing, features, and user experience. They manage over <strong>17 million domains</strong>.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>.com price:</strong> ~$10-13/year (first year and renewal)",
+          "<strong>WHOIS privacy:</strong> Free (WhoisGuard)",
+          "<strong>DNSSEC:</strong> Supported",
+          "<strong>Upselling:</strong> Minimal — some offers at checkout but easy to skip",
+          "<strong>Interface:</strong> Intuitive, well-designed dashboard with good documentation",
+          "<strong>Extras:</strong> Free email forwarding, extensive TLD selection, domain marketplace",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "<strong>Best for:</strong> Most people. Excellent balance of pricing, features, and ease of use. Great for both beginners and experienced users.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "3. Porkbun — Best for Budget-Conscious Developers",
+      },
+      {
+        type: "paragraph",
+        text: "<strong><a href=\"https://porkbun.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Porkbun</a></strong> is a newer registrar that's gained a cult following among developers for its rock-bottom pricing, playful branding, and generous free features. Despite the quirky name, they're an ICANN-accredited registrar with serious infrastructure.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>.com price:</strong> ~$9-10/year",
+          "<strong>WHOIS privacy:</strong> Free",
+          "<strong>DNSSEC:</strong> Supported",
+          "<strong>Upselling:</strong> None",
+          "<strong>Interface:</strong> Simple, clean, no bloat",
+          "<strong>Extras:</strong> Free SSL certificates, free email forwarding, free URL forwarding",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "<strong>Best for:</strong> Developers and tech-savvy users who want the lowest prices without sacrificing features.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "4. Squarespace Domains (formerly Google Domains) — Best for Simplicity",
+      },
+      {
+        type: "paragraph",
+        text: "Google Domains was acquired by <strong><a href=\"https://domains.squarespace.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Squarespace</a></strong> in 2023, but the service has maintained its reputation for clean, transparent pricing and a straightforward interface. It's especially well-integrated with Google Workspace.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>.com price:</strong> ~$12-14/year",
+          "<strong>WHOIS privacy:</strong> Free",
+          "<strong>DNSSEC:</strong> One-click setup",
+          "<strong>Upselling:</strong> Minimal",
+          "<strong>Interface:</strong> Clean and intuitive, Google-quality design",
+          "<strong>Extras:</strong> Easy Google Workspace integration, email forwarding",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "<strong>Best for:</strong> Users who want a simple, no-surprises experience. Good for non-technical users who value simplicity over lowest price.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "5. GoDaddy — The Market Leader (with Caveats)",
+      },
+      {
+        type: "paragraph",
+        text: "<strong><a href=\"https://www.godaddy.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">GoDaddy</a></strong> is the world's largest domain registrar with over <strong>80 million domains under management</strong>. They're ubiquitous and offer every possible domain-related service. However, their pricing model and aggressive upselling are well-documented concerns in the industry.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>.com price:</strong> ~$12-20/year (watch for promo vs renewal pricing gap)",
+          "<strong>WHOIS privacy:</strong> Paid add-on on most plans (~$10-15/year extra)",
+          "<strong>DNSSEC:</strong> Available on premium plans",
+          "<strong>Upselling:</strong> Very aggressive — expect multiple upsell screens during checkout",
+          "<strong>Interface:</strong> Functional but cluttered with cross-sell offers",
+          "<strong>Extras:</strong> Extensive services ecosystem (hosting, email, website builder, marketing)",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "<strong>Best for:</strong> Non-technical users who want an all-in-one solution and don't mind paying more for bundled services. Less ideal for developers who want clean, simple domain management.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "6. Hover — Best Customer Service",
+      },
+      {
+        type: "paragraph",
+        text: "<strong><a href=\"https://www.hover.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Hover</a></strong> (owned by Tucows) is known for its excellent customer support and clean, ad-free experience. They don't sell hosting or try to upsell you — they just sell domains.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>.com price:</strong> ~$13-15/year",
+          "<strong>WHOIS privacy:</strong> Free",
+          "<strong>Upselling:</strong> None",
+          "<strong>Interface:</strong> Clean and focused",
+          "<strong>Extras:</strong> Phone support, email forwarding",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "<strong>Best for:</strong> Users who value human customer support and a no-nonsense experience.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Registrar Pricing Comparison at a Glance",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Cloudflare</strong> — .com: ~$9.15/yr | WHOIS: Free | Best value overall",
+          "<strong>Porkbun</strong> — .com: ~$9.73/yr | WHOIS: Free | Lowest retail pricing",
+          "<strong>Namecheap</strong> — .com: ~$10.98/yr | WHOIS: Free | Best all-around",
+          "<strong>Squarespace</strong> — .com: ~$12/yr | WHOIS: Free | Simplest interface",
+          "<strong>Hover</strong> — .com: ~$13.99/yr | WHOIS: Free | Best support",
+          "<strong>GoDaddy</strong> — .com: ~$12-20/yr | WHOIS: Paid | Largest but most expensive",
+        ],
+      },
+      {
+        type: "callout",
+        text: "Remember: these prices are for .com. Other TLDs vary significantly. Always check the <em>renewal</em> price before committing — that's what you'll pay every year.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How to Switch Registrars (Domain Transfer)",
+      },
+      {
+        type: "paragraph",
+        text: "If you're unhappy with your current registrar, transferring is straightforward. <strong><a href=\"https://www.icann.org/resources/pages/transfer-policy-2024-11-01-en\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">ICANN's transfer policy</a></strong> guarantees your right to transfer domains between accredited registrars:",
+      },
+      {
+        type: "list",
+        ordered: true,
+        items: [
+          "Unlock the domain at your current registrar.",
+          "Get the authorization/EPP code.",
+          "Initiate transfer at the new registrar and enter the code.",
+          "Approve the transfer via email confirmation.",
+          "Wait 5-7 days for completion.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The transfer usually adds one year to your registration period and costs the equivalent of one year's registration at the new registrar.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Which domain registrar is cheapest?",
+            answer:
+              "Cloudflare Registrar offers the absolute lowest prices since they sell at wholesale cost with zero markup. Porkbun is the cheapest traditional registrar. Both offer free WHOIS privacy. For .com domains, expect to pay around $9-10/year at either option.",
+          },
+          {
+            question: "Is GoDaddy a good domain registrar?",
+            answer:
+              "GoDaddy is reliable and functional but not the best value. They charge extra for WHOIS privacy (which most competitors include free), use aggressive upselling tactics, and often have a significant gap between promotional and renewal prices. For most users, Namecheap, Porkbun, or Cloudflare Registrar offer better value.",
+          },
+          {
+            question: "Should I buy hosting from my domain registrar?",
+            answer:
+              "Not necessarily. It's often better to use separate providers for domain registration and hosting. This gives you more flexibility and avoids vendor lock-in. Modern hosting platforms like Vercel, Netlify, and Railway are often better than registrar-bundled hosting. The exception is if convenience is your top priority and the bundled hosting meets your needs.",
+          },
+          {
+            question: "Can I use any registrar with any hosting provider?",
+            answer:
+              "Yes. Your domain registrar and hosting provider are completely independent. You point your domain to any host by updating DNS records. This is a standard process that works with any combination of registrar and host.",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export function getAllPosts(): BlogPost[] {

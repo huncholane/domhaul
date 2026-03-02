@@ -49,6 +49,12 @@ export default function RootLayout({
       >
         <nav className="fixed right-4 top-4 z-50 flex gap-2">
           <Link
+            href="/blog"
+            className="rounded-md bg-zinc-900 px-3 py-1.5 text-xs font-medium text-zinc-400 transition-colors hover:bg-zinc-800 hover:text-zinc-200"
+          >
+            Blog
+          </Link>
+          <Link
             href="/history"
             className="rounded-md bg-zinc-900 px-3 py-1.5 text-xs font-medium text-zinc-400 transition-colors hover:bg-zinc-800 hover:text-zinc-200"
           >

@@ -298,6 +298,315 @@ const posts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "domain-name-ideas-for-startups",
+    title: "Domain Name Ideas for Startups: How to Find the Perfect Name in 2026",
+    description:
+      "Struggling to find a domain for your startup? Explore proven strategies for brainstorming startup domain names, with real examples and AI-powered tools to find available options fast.",
+    date: "2026-02-20",
+    keywords: [
+      "domain name ideas for startups",
+      "startup domain name",
+      "domain name generator",
+      "startup name ideas",
+      "business domain name ideas",
+      "how to find a domain name",
+      "creative domain names",
+      "AI domain name generator",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "Finding the right domain name for your startup is one of the hardest parts of launching. You need something short, memorable, available, and ideally a <strong>.com</strong> — but it feels like every good name is already taken. The frustration is real: you brainstorm for hours, check availability, and get rejected over and over.",
+      },
+      {
+        type: "paragraph",
+        text: "The good news? There are proven strategies that consistently produce great domain names, and new tools that make the process dramatically faster. In this guide, we'll walk through the most effective approaches for generating startup domain name ideas — with real examples and actionable techniques you can use right now.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Why Your Startup's Domain Name Is So Important",
+      },
+      {
+        type: "paragraph",
+        text: "Your domain is more than a URL — it's your startup's first impression, your brand anchor, and often the very first thing investors, customers, and the press see. A great domain name does three things simultaneously: it <strong>communicates what you do</strong>, it <strong>sticks in people's heads</strong>, and it <strong>looks credible</strong> in a search result.",
+      },
+      {
+        type: "paragraph",
+        text: "Early-stage startups are especially dependent on word-of-mouth and organic discovery. If someone hears about your product at a conference or on a podcast, they need to be able to remember your domain and type it correctly hours later. Every extra syllable, every hyphen, every unusual spelling is friction that costs you visitors.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "7 Proven Strategies for Generating Startup Domain Names",
+      },
+      {
+        type: "paragraph",
+        text: "Not every naming strategy works for every startup. The best approach depends on your industry, target audience, and brand personality. Here are the methods that consistently produce great results:",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "1. Combine Two Short Words",
+      },
+      {
+        type: "paragraph",
+        text: "This is the most reliable strategy for finding available, brandable domains. Take two short, meaningful words and combine them into a compound name. The words should feel natural together and hint at what your product does.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Mailchimp</strong> — mail + chimp (email marketing, playful brand)",
+          "<strong>Shopify</strong> — shop + -ify (e-commerce, action-oriented)",
+          "<strong>Dropbox</strong> — drop + box (file storage, simple metaphor)",
+          "<strong>Coinbase</strong> — coin + base (cryptocurrency, foundation/home)",
+          "<strong>Grammarly</strong> — grammar + -ly (writing tool, adverb-style modifier)",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "To use this strategy, make two lists: one with words related to your product or industry, and another with short, punchy modifier words (flow, hub, shift, spark, craft, base, wise, path, vault, pulse). Then combine pairs and check availability.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "2. Use a Verb + Noun Pattern",
+      },
+      {
+        type: "paragraph",
+        text: "Verb-noun combinations feel energetic and action-oriented — perfect for startups that want to convey momentum. The verb tells users what they'll <em>do</em>, while the noun grounds it in something tangible.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>SendGrid</strong> — send + grid",
+          "<strong>LaunchDarkly</strong> — launch + darkly",
+          "<strong>GoFundMe</strong> — go + fund + me",
+          "<strong>MakeSpace</strong> — make + space",
+          "<strong>BreakLine</strong> — break + line",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "3. Invent a New Word",
+      },
+      {
+        type: "paragraph",
+        text: "Coined words are unique by definition, which means the domain is more likely to be available and the trademark path is clearer. The trick is making the invented word feel intuitive — it should <em>sound</em> like it could be a real word, even if it isn't.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Spotify</strong> — sounds like \"spot\" + \"-ify\"",
+          "<strong>Calendly</strong> — \"calendar\" + \"-ly\"",
+          "<strong>Figma</strong> — short, punchy, tech-sounding",
+          "<strong>Zapier</strong> — \"zap\" + \"-ier\" (faster, zappier)",
+          "<strong>Twilio</strong> — evokes \"twilight\" and communication",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Techniques for coining words: shorten existing words, blend two words together (portmanteau), add suffixes like <strong>-ly</strong>, <strong>-ify</strong>, <strong>-io</strong>, <strong>-er</strong>, or swap vowels to create something fresh.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "4. Use a Metaphor or Analogy",
+      },
+      {
+        type: "paragraph",
+        text: "Metaphorical names borrow meaning from unrelated concepts to create memorable, evocative brands. They work especially well when the literal description of your product is boring or too generic.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Slack</strong> — the opposite of taut; implies cutting through tension",
+          "<strong>Notion</strong> — an idea, a concept; fits a knowledge tool",
+          "<strong>Stripe</strong> — a line, a band; clean and abstract",
+          "<strong>Linear</strong> — straightforward, efficient; fits a project tracker",
+          "<strong>Supabase</strong> — \"super\" + \"base\"; powerful foundation",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "5. Try Alternative TLDs",
+      },
+      {
+        type: "paragraph",
+        text: "If the .com is taken for your ideal name, don't give up on the name entirely. Modern TLDs like <strong>.app</strong>, <strong>.dev</strong>, <strong>.io</strong>, and <strong>.co</strong> are widely accepted in tech and startup circles. Some companies have even built iconic brands on non-.com domains.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>cal.com</strong> — scheduling (acquired the .com later, started as calendso.com)",
+          "<strong>itch.io</strong> — indie game marketplace",
+          "<strong>deno.dev</strong> — JavaScript runtime",
+          "<strong>railway.app</strong> — infrastructure platform",
+          "<strong>cursor.com</strong> — AI code editor (was previously on .so)",
+        ],
+      },
+      {
+        type: "callout",
+        text: "The best approach: check your preferred name across <strong>multiple TLDs simultaneously</strong>. A name might be taken on .com but available on .app or .dev. <strong><a href=\"/\" class=\"underline\">domhaul</a></strong> checks all major TLDs at once so you can compare options instantly.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "6. Add a Prefix or Suffix",
+      },
+      {
+        type: "paragraph",
+        text: "When a great base word is taken, adding a short prefix or suffix can create something equally strong. Common startup prefixes include <strong>get</strong>, <strong>try</strong>, <strong>use</strong>, <strong>go</strong>, and <strong>my</strong>. Suffixes like <strong>-hq</strong>, <strong>-app</strong>, <strong>-labs</strong>, and <strong>-ai</strong> also work well.",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>getdbt.com</strong> — \"get\" + dbt (data build tool)",
+          "<strong>tryghost.org</strong> — \"try\" + ghost (blogging platform)",
+          "<strong>usebruno.com</strong> — \"use\" + bruno (API client)",
+          "<strong>gohighlevel.com</strong> — \"go\" + highlevel (marketing platform)",
+          "<strong>netlify.app</strong> — uses the .app TLD itself as a suffix pattern",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "7. Use AI to Generate Ideas",
+      },
+      {
+        type: "paragraph",
+        text: "AI domain name generators have gotten remarkably good at producing creative, relevant suggestions. Instead of manually brainstorming hundreds of combinations, you can describe your product in plain language and get dozens of brandable options — with availability checked automatically.",
+      },
+      {
+        type: "paragraph",
+        text: "This is especially powerful because AI can explore naming patterns you wouldn't think of. It might combine words from different languages, use unexpected metaphors, or find compound words that sound natural but aren't obvious.",
+      },
+      {
+        type: "image",
+        src: "/blog/domhaul-startup-domains.png",
+        alt: "domhaul generating domain name ideas for a fitness app startup — showing available .com and .app domains with AI-generated creative names",
+        caption:
+          "Using domhaul to generate domain name ideas for a fitness app. The AI suggests creative names and checks availability across .com and .app simultaneously.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Real Examples: How Successful Startups Named Themselves",
+      },
+      {
+        type: "paragraph",
+        text: "Looking at how well-funded startups chose their domains reveals clear patterns. Here's a breakdown of naming strategies used by companies that went on to raise significant funding:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Vercel</strong> (compound/coined) — sounds like \"versatile\" + \"cell\". Short, unique, tech-appropriate. The .com was available.",
+          "<strong>Retool</strong> (verb prefix) — \"re\" + \"tool\". Instantly communicates rebuilding tools. Clear, memorable, two syllables.",
+          "<strong>Loom</strong> (metaphor) — a weaving device. Evokes creating/recording something. Just four letters.",
+          "<strong>Plaid</strong> (metaphor) — a pattern of interwoven threads. Perfect for a financial data connection company.",
+          "<strong>Deel</strong> (modified spelling) — a play on \"deal\" with a Dutch word meaning \"part/share\". International appeal, four letters.",
+          "<strong>Airtable</strong> (compound) — \"air\" + \"table\". Suggests a lightweight, cloud-based spreadsheet. Easy to spell and remember.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The common thread? These names are all <strong>under 8 characters</strong>, <strong>easy to pronounce</strong>, and <strong>evocative without being literal</strong>. None of them describe their product directly — \"Vercel\" doesn't say \"hosting\" and \"Plaid\" doesn't say \"banking API\" — but they all <em>feel</em> right for their brand.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Domain Names to Avoid for Your Startup",
+      },
+      {
+        type: "paragraph",
+        text: "Just as important as knowing good strategies is knowing what to avoid. These patterns consistently lead to weak, forgettable domains:",
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Literal descriptions.</strong> \"best-project-management-software.com\" is forgettable and looks spammy. It's a keyword, not a brand.",
+          "<strong>Names longer than 15 characters.</strong> Every extra character is another chance for a typo. If it doesn't fit comfortably on a business card, it's too long.",
+          "<strong>Hyphens.</strong> \"my-startup-name.com\" signals that you couldn't get the real domain. It's also nearly impossible to communicate verbally.",
+          "<strong>Numbers.</strong> \"startup365.com\" creates confusion — is it the number or the word? People will misremember it.",
+          "<strong>Trendy misspellings.</strong> Dropping vowels (\"flickr\" style) felt fresh in 2005 but looks dated now. It also means constantly correcting people.",
+          "<strong>Obscure TLDs.</strong> \".xyz\", \".info\", \".biz\" carry spam connotations. Stick to .com, .co, .io, .app, or .dev for startup credibility.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Step-by-Step: Finding Your Startup's Domain Name",
+      },
+      {
+        type: "paragraph",
+        text: "Here's a practical workflow you can follow right now to find a great domain for your startup:",
+      },
+      {
+        type: "list",
+        ordered: true,
+        items: [
+          "<strong>Define your brand attributes.</strong> Write down 3-5 words that describe how you want your startup to feel. Technical? Playful? Premium? Minimal? These words will guide your naming direction.",
+          "<strong>Brainstorm word lists.</strong> Create lists of words related to your product, your industry, your target audience, and your brand attributes. Include verbs, nouns, and adjectives.",
+          "<strong>Apply the naming strategies above.</strong> Combine words, coin new ones, try metaphors, add prefixes/suffixes. Aim for a list of 20-30 candidates.",
+          "<strong>Run them through an AI generator.</strong> Use <a href=\"/\" class=\"underline\">domhaul</a> to describe your startup and get additional AI-generated ideas you haven't considered.",
+          "<strong>Check availability across TLDs.</strong> For each candidate, check .com, .app, .dev, and .co. Also check social media handle availability on Twitter/X, Instagram, and LinkedIn.",
+          "<strong>Test with real people.</strong> Say your top 3-5 names out loud to friends or colleagues. Can they spell it after hearing it once? Do they remember it the next day? This \"radio test\" eliminates names that look good on screen but fail in conversation.",
+          "<strong>Secure the domain quickly.</strong> Good domains get registered every day. Once you've found the one, don't wait. Register it immediately — domains typically cost under $15/year, a negligible cost compared to the risk of losing your perfect name.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Should my startup's domain name describe what we do?",
+            answer:
+              "Not necessarily. Many of the most successful startups have abstract or metaphorical names — Slack, Stripe, Notion, Figma. A descriptive name can help with initial clarity, but a brandable name gives you more room to grow and pivot. The key is that the name should be memorable and easy to spell, whether it's descriptive or abstract.",
+          },
+          {
+            question: "What if the .com version of my ideal name is taken?",
+            answer:
+              "You have several options: try alternative TLDs (.app, .dev, .io, .co), add a short prefix like 'get' or 'try' (e.g., getnextapp.com), modify the name slightly while keeping the spirit, or consider purchasing the .com from the current owner (many parked domains are for sale). For tech startups, .app and .io are widely accepted alternatives.",
+          },
+          {
+            question: "How much should I spend on a startup domain name?",
+            answer:
+              "Standard domain registration costs $10-20/year. If your ideal .com is on the aftermarket, expect to pay $500-5,000 for a decent startup-quality name. Premium single-word .coms can cost $10,000-100,000+. For most early-stage startups, finding a great available name (or spending under $1,000 on the aftermarket) is the best balance of quality and budget.",
+          },
+          {
+            question: "Should I buy multiple TLDs for my startup name?",
+            answer:
+              "At minimum, secure the .com if it's available (even if you primarily use .io or .app). Buying the most common alternative TLDs (.com, .co, .net) prevents competitors or squatters from registering confusingly similar domains. This typically costs under $50/year total and is cheap insurance for your brand.",
+          },
+          {
+            question: "How long should a startup domain name be?",
+            answer:
+              "Aim for 6-12 characters (excluding the TLD). The average domain length among Y Combinator companies is about 7 characters. Shorter domains are easier to remember, type, and share. Very few successful startups have domains longer than 15 characters.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Find Your Startup's Domain Name Now",
+      },
+      {
+        type: "paragraph",
+        text: "The domain landscape changes every day — names that are available today might be gone tomorrow. The strategies in this guide give you a proven framework for generating strong candidates, but the critical step is actually checking availability and securing your name before someone else does.",
+      },
+      {
+        type: "callout",
+        text: "Skip the manual brainstorming. <strong><a href=\"/\" class=\"underline\">domhaul</a></strong> combines AI-powered name generation with real-time availability checking across multiple TLDs. Describe your startup in a sentence and get a list of available, brandable domain names in seconds. <a href=\"/\" class=\"underline\">Try it free</a>.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts(): BlogPost[] {

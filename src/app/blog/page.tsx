@@ -2,10 +2,26 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 
+const title = "Blog — domhaul";
+const description =
+  "Tips, guides, and insights on domain names, branding, and building your online presence.";
+
 export const metadata: Metadata = {
-  title: "Blog — domhaul",
-  description:
-    "Tips, guides, and insights on domain names, branding, and building your online presence.",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "/blog",
+    type: "website",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "domhaul" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/og.png"],
+  },
   alternates: {
     canonical: "/blog",
     types: {

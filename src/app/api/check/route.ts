@@ -1,5 +1,6 @@
 import { NextRequest } from "next/server";
 import { checkDomains } from "@/lib/domain-checker";
+import { brandabilityScore } from "@/lib/brandability";
 import type { CheckRequest, StreamEvent } from "@/lib/types";
 
 export const runtime = "nodejs";
@@ -51,6 +52,7 @@ export async function POST(req: NextRequest) {
         controller.enqueue(encode({ type: "phase", phase: "checking" }));
 
         await checkDomains(domains, (result) => {
+          result.brandScore = brandabilityScore(result.name);
           controller.enqueue(encode({ type: "result", result }));
         });
 

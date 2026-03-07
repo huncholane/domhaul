@@ -5,6 +5,7 @@ export interface DomainResult {
   available: boolean | null; // null = still checking
   registrar?: string;
   error?: string;
+  brandScore?: number; // 0-100 brandability score
 }
 
 export type StreamEvent =

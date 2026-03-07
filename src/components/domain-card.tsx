@@ -27,9 +27,25 @@ export function DomainCard({ result }: { result: DomainResult }) {
       }`}
     >
       <div className="min-w-0 flex-1">
-        <p className="truncate font-mono text-sm text-zinc-100">
-          {result.domain}
-        </p>
+        <div className="flex items-center gap-2">
+          <p className="truncate font-mono text-sm text-zinc-100">
+            {result.domain}
+          </p>
+          {result.brandScore != null && (
+            <span
+              className={`shrink-0 rounded px-1.5 py-0.5 text-[10px] font-semibold leading-none ${
+                result.brandScore >= 75
+                  ? "bg-emerald-500/15 text-emerald-400"
+                  : result.brandScore >= 50
+                    ? "bg-amber-500/15 text-amber-400"
+                    : "bg-zinc-700/50 text-zinc-500"
+              }`}
+              title="Brandability score"
+            >
+              {result.brandScore}
+            </span>
+          )}
+        </div>
         {result.registrar && (
           <p className="mt-0.5 truncate text-xs text-zinc-500">
             {result.registrar}

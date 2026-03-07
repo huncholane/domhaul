@@ -23,7 +23,10 @@ export function ResultsPanel({
     // Available first, then taken, then errors
     const order = (r: DomainResult) =>
       r.available === true ? 0 : r.available === false ? 1 : 2;
-    return order(a) - order(b);
+    const tierDiff = order(a) - order(b);
+    if (tierDiff !== 0) return tierDiff;
+    // Within same tier, sort by brandability score (higher first)
+    return (b.brandScore ?? 0) - (a.brandScore ?? 0);
   });
 
   const filtered = showAvailableOnly

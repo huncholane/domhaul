@@ -3251,7 +3251,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Choosing a domain name doesn't have to be stressful. Start by brainstorming names that reflect your brand, keep them short and memorable, and use a tool like <strong><a href='https://domhaul.vercel.app'>domhaul</a></strong> to check availability across multiple TLDs at once. With AI-powered suggestions, you can discover creative domain options you might never have thought of on your own.",
+        text: "Choosing a domain name doesn't have to be stressful. Start by brainstorming names that reflect your brand, keep them short and memorable, and use a tool like <strong><a href='https://domhaul.com'>domhaul</a></strong> to check availability across multiple TLDs at once. With AI-powered suggestions, you can discover creative domain options you might never have thought of on your own.",
       },
       {
         type: "faq",
@@ -3373,7 +3373,7 @@ const posts: BlogPost[] = [
         items: [
           "<strong>Expired domain lists</strong> — Services like <strong>ExpiredDomains.net</strong> aggregate lists of domains dropping daily. Filter by metrics like Domain Authority, backlinks, and age.",
           "<strong>Auction platforms</strong> — <strong>GoDaddy Auctions</strong>, <strong>NameJet</strong>, and <strong>DropCatch</strong> run daily auctions on expiring domains. Many gems slip through at low prices.",
-          "<strong>AI generators</strong> — Tools like <strong><a href='https://domhaul.vercel.app'>domhaul</a></strong> can generate creative domain ideas that are still available for registration. If a generated name has strong branding potential, it could be worth registering speculatively.",
+          "<strong>AI generators</strong> — Tools like <strong><a href='https://domhaul.com'>domhaul</a></strong> can generate creative domain ideas that are still available for registration. If a generated name has strong branding potential, it could be worth registering speculatively.",
           "<strong>Trend spotting</strong> — Follow emerging industries, technologies, and cultural trends. Early registration of domains related to AI, crypto, or new product categories has been extremely profitable for forward-thinking investors.",
           "<strong>Closeout sales</strong> — Other domain investors sometimes liquidate their portfolios. Watch forums like <strong>NamePros</strong> and <strong>DNForum</strong> for bulk sale opportunities.",
         ],
@@ -3442,7 +3442,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "The barrier to entry is low — a single domain registration costs less than a cup of coffee. Start by using <strong><a href='https://domhaul.vercel.app'>domhaul</a></strong> to brainstorm domain ideas based on trending topics or emerging industries. Check availability instantly, register the best names through your preferred registrar, and list them for sale across multiple marketplaces.",
+        text: "The barrier to entry is low — a single domain registration costs less than a cup of coffee. Start by using <strong><a href='https://domhaul.com'>domhaul</a></strong> to brainstorm domain ideas based on trending topics or emerging industries. Check availability instantly, register the best names through your preferred registrar, and list them for sale across multiple marketplaces.",
       },
       {
         type: "paragraph",
@@ -3633,7 +3633,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "For most people, the best approach is registering a standard domain ($8–15/year) and investing time in finding the right name rather than spending thousands on a premium. Use tools like <strong><a href='https://domhaul.vercel.app'>domhaul</a></strong> to generate creative, available domain names that you can register at standard pricing.",
+        text: "For most people, the best approach is registering a standard domain ($8–15/year) and investing time in finding the right name rather than spending thousands on a premium. Use tools like <strong><a href='https://domhaul.com'>domhaul</a></strong> to generate creative, available domain names that you can register at standard pricing.",
       },
       {
         type: "paragraph",
@@ -3821,7 +3821,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "The best domain for SEO is one that builds a strong brand, is easy to remember and type, and serves as a stable foundation for years of content investment. Use <strong><a href='https://domhaul.vercel.app'>domhaul</a></strong> to brainstorm brandable domain ideas and check availability across multiple TLDs — finding the perfect balance between creativity and availability.",
+        text: "The best domain for SEO is one that builds a strong brand, is easy to remember and type, and serves as a stable foundation for years of content investment. Use <strong><a href='https://domhaul.com'>domhaul</a></strong> to brainstorm brandable domain ideas and check availability across multiple TLDs — finding the perfect balance between creativity and availability.",
       },
       {
         type: "image",
@@ -3895,7 +3895,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "<strong><a href='https://domhaul.vercel.app'>domhaul</a></strong> takes a fundamentally different approach from most generators. Instead of combining keywords mechanically, it uses AI to understand your project description and generate contextually relevant, brandable domain names. You describe what you're building — 'a sustainable fashion marketplace' or 'a personal finance app for Gen Z' — and it generates names that actually make sense for your concept.",
+        text: "<strong><a href='https://domhaul.com'>domhaul</a></strong> takes a fundamentally different approach from most generators. Instead of combining keywords mechanically, it uses AI to understand your project description and generate contextually relevant, brandable domain names. You describe what you're building — 'a sustainable fashion marketplace' or 'a personal finance app for Gen Z' — and it generates names that actually make sense for your concept.",
       },
       {
         type: "list",
@@ -4046,7 +4046,7 @@ const posts: BlogPost[] = [
       {
         type: "list",
         items: [
-          "<strong>Need creative, contextual names?</strong> → <strong><a href='https://domhaul.vercel.app'>domhaul</a></strong> — AI understands your project and generates relevant names",
+          "<strong>Need creative, contextual names?</strong> → <strong><a href='https://domhaul.com'>domhaul</a></strong> — AI understands your project and generates relevant names",
           "<strong>Want maximum .com options?</strong> → <strong>Lean Domain Search</strong> — produces thousands of .com combinations",
           "<strong>Building a brand from scratch?</strong> → <strong>Namelix</strong> — generates names with logo concepts",
           "<strong>Need instant registration?</strong> → <strong>Namecheap Beast Mode</strong> — search and buy in one place",

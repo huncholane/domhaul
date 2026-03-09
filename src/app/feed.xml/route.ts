@@ -1,6 +1,6 @@
 import { getAllPosts } from "@/lib/blog";
 
-const BASE_URL = "https://domhaul.vercel.app";
+const BASE_URL = "https://domhaul.com";
 
 export function GET() {
   const posts = getAllPosts();

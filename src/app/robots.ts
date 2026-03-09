@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/settings", "/history"],
       },
     ],
-    sitemap: "https://domhaul.vercel.app/sitemap.xml",
+    sitemap: "https://domhaul.com/sitemap.xml",
   };
 }

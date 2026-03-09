@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://domhaul.com"),
+  metadataBase: new URL("https://www.domhaul.com"),
   title: "domhaul — Find Available Domain Names",
   description:
     "AI-powered domain name generator and availability checker. Find the perfect domain for your project.",
@@ -52,12 +52,12 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "domhaul",
-              url: "https://domhaul.com",
+              url: "https://www.domhaul.com",
               description:
                 "AI-powered domain name generator and availability checker.",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://domhaul.com/?q={search_term_string}",
+                target: "https://www.domhaul.com/?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),

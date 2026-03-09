@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/settings", "/history"],
       },
     ],
-    sitemap: "https://domhaul.com/sitemap.xml",
+    sitemap: "https://www.domhaul.com/sitemap.xml",
   };
 }

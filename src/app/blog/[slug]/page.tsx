@@ -148,16 +148,16 @@ function buildJsonLd(post: {
       author: {
         "@type": "Organization",
         name: "domhaul",
-        url: "https://domhaul.com",
+        url: "https://www.domhaul.com",
       },
       publisher: {
         "@type": "Organization",
         name: "domhaul",
-        url: "https://domhaul.com",
+        url: "https://www.domhaul.com",
       },
       mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": `https://domhaul.com/blog/${post.slug}`,
+        "@id": `https://www.domhaul.com/blog/${post.slug}`,
       },
     },
   ];

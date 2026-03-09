@@ -1,6 +1,6 @@
 import { getAllPosts } from "@/lib/blog";
 
-const BASE_URL = "https://domhaul.com";
+const BASE_URL = "https://www.domhaul.com";
 
 export function GET() {
   const posts = getAllPosts();

@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
 
-const AFF_BASE = "https://namecheap.pxf.io/YVg5vm";
+const AFF_BASE = "https://namecheap.pxf.io/k4jn2z";
 
 function affiliateUrl(domain: string): string {
   const dest = `https://www.namecheap.com/domains/registration/results/?domain=${encodeURIComponent(domain)}`;

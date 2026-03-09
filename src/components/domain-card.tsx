@@ -3,10 +3,8 @@
 import type { DomainResult } from "@/lib/types";
 import { StatusBadge } from "./status-badge";
 
-const NAMECHEAP_AFF_BASE = "https://namecheap.pxf.io/k4jn2z";
-
 function getRegisterUrl(domain: string): string {
-  return `${NAMECHEAP_AFF_BASE}?u=${encodeURIComponent(`https://www.namecheap.com/domains/registration/results/?domain=${domain}`)}`;
+  return `/api/register?domain=${encodeURIComponent(domain)}`;
 }
 
 export function DomainCard({ result }: { result: DomainResult }) {

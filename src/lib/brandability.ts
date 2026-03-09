@@ -136,25 +136,48 @@ function memorabilityScore(name: string): number {
 
 // --- Composite ---
 
+export interface BrandScoreBreakdown {
+  total: number;
+  length: number;
+  pronounceability: number;
+  simplicity: number;
+  memorability: number;
+}
+
+/**
+ * Calculate a brandability score from 0–100 for a bare domain name (no TLD),
+ * with per-axis breakdown.
+ */
+export function brandabilityBreakdown(name: string): BrandScoreBreakdown {
+  const clean = name.toLowerCase().replace(/[^a-z0-9]/g, "");
+  if (clean.length === 0)
+    return { total: 0, length: 0, pronounceability: 0, simplicity: 0, memorability: 0 };
+
+  const l = lengthScore(clean);
+  const p = pronounceabilityScore(clean);
+  const s = simplicityScore(clean);
+  const m = memorabilityScore(clean);
+
+  const weights = { length: 0.25, pronounceability: 0.30, simplicity: 0.20, memorability: 0.25 };
+
+  const raw =
+    l * weights.length +
+    p * weights.pronounceability +
+    s * weights.simplicity +
+    m * weights.memorability;
+
+  return {
+    total: Math.round(raw * 100),
+    length: Math.round(l * 100),
+    pronounceability: Math.round(p * 100),
+    simplicity: Math.round(s * 100),
+    memorability: Math.round(m * 100),
+  };
+}
+
 /**
  * Calculate a brandability score from 0–100 for a bare domain name (no TLD).
  */
 export function brandabilityScore(name: string): number {
-  const clean = name.toLowerCase().replace(/[^a-z0-9]/g, "");
-  if (clean.length === 0) return 0;
-
-  const weights = {
-    length: 0.25,
-    pronounceability: 0.30,
-    simplicity: 0.20,
-    memorability: 0.25,
-  };
-
-  const raw =
-    lengthScore(clean) * weights.length +
-    pronounceabilityScore(clean) * weights.pronounceability +
-    simplicityScore(clean) * weights.simplicity +
-    memorabilityScore(clean) * weights.memorability;
-
-  return Math.round(raw * 100);
+  return brandabilityBreakdown(name).total;
 }

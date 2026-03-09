@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import type { DomainResult } from "@/lib/types";
 import { StatusBadge } from "./status-badge";
 
@@ -8,6 +9,8 @@ function getRegisterUrl(domain: string): string {
 }
 
 export function DomainCard({ result }: { result: DomainResult }) {
+  const [showBreakdown, setShowBreakdown] = useState(false);
+
   const status = result.error
     ? "error"
     : result.available === null
@@ -30,18 +33,57 @@ export function DomainCard({ result }: { result: DomainResult }) {
             {result.domain}
           </p>
           {result.brandScore != null && (
-            <span
-              className={`shrink-0 rounded px-1.5 py-0.5 text-[10px] font-semibold leading-none ${
-                result.brandScore >= 75
-                  ? "bg-emerald-500/15 text-emerald-400"
-                  : result.brandScore >= 50
-                    ? "bg-amber-500/15 text-amber-400"
-                    : "bg-zinc-700/50 text-zinc-500"
-              }`}
-              title="Brandability score"
-            >
-              {result.brandScore}
-            </span>
+            <div className="relative">
+              <button
+                type="button"
+                className={`shrink-0 cursor-pointer rounded px-1.5 py-0.5 text-[10px] font-semibold leading-none ${
+                  result.brandScore >= 75
+                    ? "bg-emerald-500/15 text-emerald-400"
+                    : result.brandScore >= 50
+                      ? "bg-amber-500/15 text-amber-400"
+                      : "bg-zinc-700/50 text-zinc-500"
+                }`}
+                onMouseEnter={() => setShowBreakdown(true)}
+                onMouseLeave={() => setShowBreakdown(false)}
+                onClick={() => setShowBreakdown(!showBreakdown)}
+              >
+                {result.brandScore}
+              </button>
+              {showBreakdown && result.brandBreakdown && (
+                <div className="absolute left-1/2 bottom-full z-50 mb-2 -translate-x-1/2">
+                  <div className="w-44 rounded-lg border border-zinc-700 bg-zinc-800 p-2.5 shadow-xl">
+                    <p className="mb-1.5 text-[10px] font-semibold text-zinc-300">Brandability</p>
+                    <div className="space-y-1.5">
+                      {([
+                        ["Length", result.brandBreakdown.length],
+                        ["Pronounce", result.brandBreakdown.pronounceability],
+                        ["Simplicity", result.brandBreakdown.simplicity],
+                        ["Memorable", result.brandBreakdown.memorability],
+                      ] as const).map(([label, value]) => (
+                        <div key={label}>
+                          <div className="flex items-center justify-between text-[10px]">
+                            <span className="text-zinc-400">{label}</span>
+                            <span className="font-mono text-zinc-300">{value}</span>
+                          </div>
+                          <div className="mt-0.5 h-1 w-full rounded-full bg-zinc-700">
+                            <div
+                              className={`h-1 rounded-full ${
+                                value >= 75
+                                  ? "bg-emerald-500"
+                                  : value >= 50
+                                    ? "bg-amber-500"
+                                    : "bg-zinc-500"
+                              }`}
+                              style={{ width: `${value}%` }}
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
           )}
         </div>
         {result.registrar && (

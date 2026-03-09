@@ -6,6 +6,12 @@ export interface DomainResult {
   registrar?: string;
   error?: string;
   brandScore?: number; // 0-100 brandability score
+  brandBreakdown?: {
+    length: number;
+    pronounceability: number;
+    simplicity: number;
+    memorability: number;
+  };
 }
 
 export type StreamEvent =

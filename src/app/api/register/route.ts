@@ -1,46 +1,71 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 
 const AFF_BASE = "https://namecheap.pxf.io/k4jn2z";
 
-// Namecheap registration URL without affiliate tracking (fallback)
+function affiliateUrl(domain: string): string {
+  const dest = `https://www.namecheap.com/domains/registration/results/?domain=${encodeURIComponent(domain)}`;
+  return `${AFF_BASE}?u=${encodeURIComponent(dest)}`;
+}
+
 function directUrl(domain: string): string {
   return `https://www.namecheap.com/domains/registration/results/?domain=${encodeURIComponent(domain)}`;
 }
 
 /**
- * Resolves the affiliate redirect chain server-side so the user's browser
- * only ever navigates to namecheap.com (not pxf.io), which avoids ad blockers.
+ * Resolve the pxf.io redirect chain server-side to get the final
+ * namecheap.com URL with tracking params — used as fallback for
+ * ad-blocker users who can't reach pxf.io directly.
  */
-async function resolveAffiliateUrl(domain: string): Promise<string> {
-  const dest = directUrl(domain);
-  const affUrl = `${AFF_BASE}?u=${encodeURIComponent(dest)}`;
-
+async function resolveFallbackUrl(domain: string): Promise<string> {
   try {
-    // Follow the full redirect chain server-side to get the final
-    // namecheap.com URL with tracking params (clickID, irgwc, etc.)
-    const res = await fetch(affUrl, { redirect: "follow" });
-    const finalUrl = res.url;
-
-    // Only use it if we actually landed on namecheap.com
-    if (finalUrl.includes("namecheap.com")) {
-      return finalUrl;
-    }
+    const res = await fetch(affiliateUrl(domain), { redirect: "follow" });
+    if (res.url.includes("namecheap.com")) return res.url;
   } catch {
-    // Network error — fall through to direct link
+    // fall through
   }
-
-  return dest;
+  return directUrl(domain);
 }
 
 export async function GET(req: NextRequest) {
   const domain = req.nextUrl.searchParams.get("domain");
   if (!domain) {
-    return NextResponse.redirect(
-      "https://www.namecheap.com/domains/",
-      { status: 302 }
-    );
+    return new Response(null, {
+      status: 302,
+      headers: { Location: "https://www.namecheap.com/domains/" },
+    });
   }
 
-  const url = await resolveAffiliateUrl(domain);
-  return NextResponse.redirect(url, { status: 302 });
+  // Primary: pxf.io link (registers a real click from the user's browser)
+  const primary = affiliateUrl(domain);
+  // Fallback: server-resolved namecheap.com URL with tracking params
+  const fallback = await resolveFallbackUrl(domain);
+
+  // Serve a tiny HTML page that tries the affiliate link first.
+  // If the ad blocker blocks the navigation, JS catches it and
+  // falls back to the direct namecheap.com URL with tracking params.
+  const html = `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Redirecting to Namecheap...</title>
+<style>body{background:#09090b;color:#a1a1aa;font-family:system-ui;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}a{color:#6ee7b7}</style>
+</head>
+<body>
+<p>Redirecting to Namecheap... <a id="f" href="${fallback}">Click here</a> if not redirected.</p>
+<script>
+(function(){
+  var img = new Image();
+  img.onload = function(){ window.location.replace("${primary}"); };
+  img.onerror = function(){ window.location.replace("${fallback}"); };
+  img.src = "https://namecheap.pxf.io/i/7039662/386170/5618";
+  setTimeout(function(){ window.location.replace("${fallback}"); }, 2000);
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0;url=${fallback}"></noscript>
+</body>
+</html>`;
+
+  return new Response(html, {
+    headers: { "Content-Type": "text/html; charset=utf-8" },
+  });
 }

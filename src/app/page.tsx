@@ -101,6 +101,7 @@ export default function Home() {
   const [settings, setSettings] = useState<Settings | null>(null);
   const [provider, setProvider] = useState<AiProvider>("server");
   const [pendingRerun, setPendingRerun] = useState<SearchParams | null>(null);
+  const [prompt, setPrompt] = useState("");
 
   useEffect(() => {
     const s = loadSettings();
@@ -151,6 +152,7 @@ export default function Home() {
       const controller = new AbortController();
       abortRef.current = controller;
       dispatch({ type: "START" });
+      setPrompt(params.description);
 
       let totalChecked = 0;
       let availableFound = 0;
@@ -324,6 +326,7 @@ export default function Home() {
         phase={state.phase}
         round={state.round}
         maxRounds={state.maxRounds}
+        prompt={prompt}
       />
 
     </div>

@@ -10,14 +10,40 @@ export function ResultsPanel({
   phase,
   round,
   maxRounds,
+  prompt,
 }: {
   candidates: string[];
   results: DomainResult[];
   phase: "idle" | "generating" | "checking" | "done";
   round: number;
   maxRounds: number;
+  prompt: string;
 }) {
   const [showAvailableOnly, setShowAvailableOnly] = useState(false);
+  const [sharing, setSharing] = useState(false);
+
+  async function handleShare() {
+    setSharing(true);
+    try {
+      const res = await fetch("/api/share", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt, results }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+
+      const shareUrl = `https://www.domhaul.com/share/${data.id}`;
+      const availCount = results.filter((r) => r.available === true).length;
+      const text = `Just found ${availCount} available domain${availCount !== 1 ? "s" : ""} for my project with @domhaul 🔥\n\nAI-powered domain name generator 👉`;
+      const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`;
+      window.open(tweetUrl, "_blank", "noopener,noreferrer");
+    } catch {
+      // Silently fail — user can try again
+    } finally {
+      setSharing(false);
+    }
+  }
 
   const sorted = [...results].sort((a, b) => {
     // Available first, then taken, then errors
@@ -97,19 +123,31 @@ export function ResultsPanel({
                 </h3>
               )}
             </div>
-            {results.length > 0 && (
-              <button
-                type="button"
-                onClick={() => setShowAvailableOnly(!showAvailableOnly)}
-                className={`rounded-md px-2.5 py-1 text-xs font-medium transition-colors ${
-                  showAvailableOnly
-                    ? "bg-emerald-500/20 text-emerald-300"
-                    : "bg-zinc-800 text-zinc-400 hover:text-zinc-300"
-                }`}
-              >
-                {showAvailableOnly ? "Show all" : "Available only"}
-              </button>
-            )}
+            <div className="flex items-center gap-2">
+              {results.length > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setShowAvailableOnly(!showAvailableOnly)}
+                  className={`rounded-md px-2.5 py-1 text-xs font-medium transition-colors ${
+                    showAvailableOnly
+                      ? "bg-emerald-500/20 text-emerald-300"
+                      : "bg-zinc-800 text-zinc-400 hover:text-zinc-300"
+                  }`}
+                >
+                  {showAvailableOnly ? "Show all" : "Available only"}
+                </button>
+              )}
+              {phase === "done" && availableCount > 0 && (
+                <button
+                  type="button"
+                  onClick={handleShare}
+                  disabled={sharing}
+                  className="rounded-md bg-zinc-800 px-2.5 py-1 text-xs font-medium text-zinc-400 transition-colors hover:text-zinc-300 disabled:opacity-50"
+                >
+                  {sharing ? "Sharing..." : "Share to X"}
+                </button>
+              )}
+            </div>
           </div>
           <div className="grid gap-2 sm:grid-cols-2">
             {filtered.map((result) => (

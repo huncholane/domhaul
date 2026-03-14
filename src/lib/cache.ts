@@ -15,13 +15,25 @@ function getClient(): Client | null {
 
 async function ensureTable(db: Client) {
   if (initialized) return;
-  await db.execute(`
-    CREATE TABLE IF NOT EXISTS domain_cache (
-      domain TEXT PRIMARY KEY,
-      status TEXT NOT NULL,
-      checked_at INTEGER NOT NULL
-    )
-  `);
+  await db.batch([
+    {
+      sql: `CREATE TABLE IF NOT EXISTS domain_cache (
+        domain TEXT PRIMARY KEY,
+        status TEXT NOT NULL,
+        checked_at INTEGER NOT NULL
+      )`,
+      args: [],
+    },
+    {
+      sql: `CREATE TABLE IF NOT EXISTS shared_results (
+        id TEXT PRIMARY KEY,
+        prompt TEXT NOT NULL,
+        results TEXT NOT NULL,
+        created_at INTEGER NOT NULL
+      )`,
+      args: [],
+    },
+  ]);
   initialized = true;
 }
 
@@ -92,4 +104,54 @@ export async function getCachedBulk(
     // Cache read failure is non-fatal
   }
   return result;
+}
+
+// --- Shared results ---
+
+export interface SharedResult {
+  id: string;
+  prompt: string;
+  results: { domain: string; brandScore?: number }[];
+  createdAt: number;
+}
+
+export async function saveShare(
+  id: string,
+  prompt: string,
+  results: { domain: string; brandScore?: number }[]
+): Promise<boolean> {
+  const db = getClient();
+  if (!db) return false;
+  try {
+    await ensureTable(db);
+    await db.execute({
+      sql: `INSERT INTO shared_results (id, prompt, results, created_at) VALUES (?, ?, ?, ?)`,
+      args: [id, prompt, JSON.stringify(results), Date.now()],
+    });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export async function getShare(id: string): Promise<SharedResult | null> {
+  const db = getClient();
+  if (!db) return null;
+  try {
+    await ensureTable(db);
+    const res = await db.execute({
+      sql: "SELECT id, prompt, results, created_at FROM shared_results WHERE id = ?",
+      args: [id],
+    });
+    if (res.rows.length === 0) return null;
+    const row = res.rows[0];
+    return {
+      id: row.id as string,
+      prompt: row.prompt as string,
+      results: JSON.parse(row.results as string),
+      createdAt: row.created_at as number,
+    };
+  } catch {
+    return null;
+  }
 }

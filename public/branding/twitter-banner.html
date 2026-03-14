@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=3000">
+<title>domhaul — Twitter Banner</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Outfit:wght@300;600;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 3000px;
+    height: 1000px;
+    overflow: hidden;
+    background: #06060a;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .banner {
+    position: relative;
+    width: 3000px;
+    height: 1000px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 240px;
+    padding: 0 160px 0 400px;
+  }
+
+  .banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 1200px 800px at 35% 40%, rgba(99, 102, 241, 0.12) 0%, transparent 70%),
+      radial-gradient(ellipse 1000px 700px at 75% 30%, rgba(52, 211, 153, 0.1) 0%, transparent 70%),
+      radial-gradient(ellipse 1600px 1000px at 50% 120%, rgba(99, 102, 241, 0.06) 0%, transparent 60%);
+    z-index: 0;
+  }
+
+  .banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 120px 120px;
+    z-index: 1;
+  }
+
+  .noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    opacity: 0.35;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .left {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: -40px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+  }
+
+  .logo-img {
+    width: 112px;
+    height: 112px;
+    border-radius: 28px;
+    box-shadow: 0 0 80px rgba(99, 102, 241, 0.3), 0 0 160px rgba(52, 211, 153, 0.15);
+  }
+
+  .brand-name {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 104px;
+    color: #e4e4e7;
+    letter-spacing: -4px;
+    line-height: 1;
+  }
+
+  .tagline {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 44px;
+    color: #71717a;
+    letter-spacing: 1px;
+    max-width: 880px;
+    line-height: 1.4;
+  }
+
+  .tagline em {
+    font-style: normal;
+    color: #34d399;
+    font-weight: 600;
+  }
+
+  .url {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 30px;
+    color: #52525b;
+    letter-spacing: 2px;
+    margin-top: 8px;
+  }
+
+  .right {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: rotate(-2deg);
+    margin-top: -20px;
+  }
+
+  .domain-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(24, 24, 27, 0.8);
+    border: 2px solid rgba(39, 39, 42, 0.8);
+    border-radius: 20px;
+    padding: 24px 40px;
+    min-width: 720px;
+    backdrop-filter: blur(8px);
+  }
+
+  .domain-card.available {
+    border-color: rgba(52, 211, 153, 0.2);
+    background: rgba(52, 211, 153, 0.04);
+  }
+
+  .domain-card .name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 34px;
+    color: #e4e4e7;
+    font-weight: 700;
+  }
+
+  .domain-card .score {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 10px;
+  }
+
+  .score.green {
+    background: rgba(52, 211, 153, 0.15);
+    color: #34d399;
+  }
+
+  .score.amber {
+    background: rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+  }
+
+  .domain-card .status {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 12px;
+  }
+
+  .status.avail {
+    background: rgba(52, 211, 153, 0.15);
+    color: #34d399;
+  }
+
+  .status.taken {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    opacity: 0.5;
+  }
+
+  .card-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(160px);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .orb-1 {
+    width: 600px;
+    height: 600px;
+    background: rgba(99, 102, 241, 0.08);
+    top: -160px;
+    right: 400px;
+  }
+
+  .orb-2 {
+    width: 400px;
+    height: 400px;
+    background: rgba(52, 211, 153, 0.06);
+    bottom: -120px;
+    right: 160px;
+  }
+
+  .accent-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, transparent 0%, #6366f1 30%, #34d399 70%, transparent 100%);
+    z-index: 20;
+    opacity: 0.6;
+  }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <div class="accent-line"></div>
+    <div class="noise"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="left">
+      <div class="brand">
+        <img src="/logo.svg" alt="domhaul" class="logo-img" />
+        <span class="brand-name">domhaul</span>
+      </div>
+      <p class="tagline">
+        <em>AI-powered</em> domain name generator<br>
+        &amp; availability checker
+      </p>
+      <span class="url">www.domhaul.com</span>
+    </div>
+
+    <div class="right">
+      <div class="domain-card available">
+        <div class="card-row">
+          <span class="name">nexaflow.com</span>
+          <span class="score green">87</span>
+        </div>
+        <span class="status avail">Available</span>
+      </div>
+      <div class="domain-card available">
+        <div class="card-row">
+          <span class="name">synthwave.io</span>
+          <span class="score green">82</span>
+        </div>
+        <span class="status avail">Available</span>
+      </div>
+      <div class="domain-card available">
+        <div class="card-row">
+          <span class="name">lumora.dev</span>
+          <span class="score amber">71</span>
+        </div>
+        <span class="status avail">Available</span>
+      </div>
+      <div class="domain-card">
+        <div class="card-row">
+          <span class="name">coolbrand.com</span>
+          <span class="score amber">65</span>
+        </div>
+        <span class="status taken">Taken</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -5,7 +5,8 @@ import type { DomainResult } from "@/lib/types";
 import { StatusBadge } from "./status-badge";
 
 function getRegisterUrl(domain: string): string {
-  return `/api/register?domain=${encodeURIComponent(domain)}`;
+  const dest = `https://www.namecheap.com/domains/registration/results/?domain=${encodeURIComponent(domain)}`;
+  return `https://namecheap.pxf.io/k4jn2z?u=${encodeURIComponent(dest)}`;
 }
 
 export function DomainCard({ result }: { result: DomainResult }) {
